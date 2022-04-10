@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard');
 });
+
+Route::get('/addRoomBooking', function () {
+    return view('add_new_booking');
+});
+
+Route::get('/roomBooking', function () {
+    return view('booking_list');
+});
+

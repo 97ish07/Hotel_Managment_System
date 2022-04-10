@@ -16,12 +16,13 @@
 
                     <div class="logo"></div>
                     <div class="home" ><div class="homelogo" ></div>Home</div>
-                    <div class="RoomBooking" ><div class="RoomBookinglogo" ></div>Room Booking</div>
+                    <div class="RoomBooking" ><div class="RoomBookinglogo" ></div><a href  = "/roomBooking">Room Booking</a></div>
                     <div class="RoomManagement" ><div class="RoomManagementlogo" ></div>Room Management</div>
                     <div class="Dining" ><div class="Dininglogo" ></div>Dining</div>
                     <div class="Inventory" ><div class="Inventorylogo" ></div>Inventory</div>
 
                 </div>
+               
         </div>
     
     </body>
