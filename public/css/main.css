@@ -1,0 +1,237 @@
+
+body{
+    margin: 0px 0px 0px 0px;
+    min-height: 100%;
+    
+}
+
+.background{
+    
+    background-image: url("../images/main_image.jpg");
+    height: 788px;
+    width: 1588px;
+    background-size:1585px  788px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.dashboardback{
+    background-position: center;
+    height: 670px;
+    width: 1300px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 57px;
+    left:138px;
+    border-radius: 20px;
+    opacity: .7;
+    border-color: rgb(171, 173, 173);
+    border-style: solid;
+    border-width: 0px;
+
+    
+}
+.navigationbar{
+    background-position: center;
+    height: 670px;
+    width: 270px;
+    background-image: linear-gradient(#8BD7DC,#1c6c7c);
+    position: absolute;
+    top: 57px;
+    left:138px;
+    border-radius: 20px 0px 0px 19px;
+    opacity:1px;
+      
+}
+.homelogo{
+    
+    background-image: url("../images/homeicon.png");
+    height: 18px;
+    width: 18px;
+    background-size:18px  18px;
+    background-repeat: no-repeat;
+    position: relative;
+    filter:  brightness(0) invert(1);
+    position: absolute;
+    top: 13px;
+    left:28px;
+    
+}
+.RoomBookinglogo{
+    
+    background-image: url("../images/bookingicon.png");
+    height: 18px;
+    width: 18px;
+    background-size:18px  18px;
+    background-repeat: no-repeat;
+    position: relative;
+    filter:  brightness(0) invert(1);
+    position: absolute;
+    top: 14px;
+    left:28px;
+    
+}
+.RoomManagementlogo{
+    
+    background-image: url("../images/roomManagementLogo.png");
+    height: 18px;
+    width: 18px;
+    background-size:18px  18px;
+    background-repeat: no-repeat;
+    position: relative;
+    filter:  brightness(0) invert(1);
+    position: absolute;
+    top: 14px;
+    left:28px;
+    
+}
+.Dininglogo{
+    
+    background-image: url("../images/DiningLogo.png");
+    height: 18px;
+    width: 18px;
+    background-size:18px  18px;
+    background-repeat: no-repeat;
+    position: relative;
+    filter:  brightness(0) invert(1);
+    position: absolute;
+    top: 14px;
+    left:28px;
+    
+}
+.Inventorylogo{
+    
+    background-image: url("../images/InventoryLogo.png");
+    height: 20px;
+    width: 20px;
+    background-size:20px  20px;
+    background-repeat: no-repeat;
+    position: relative;
+    filter:  brightness(0) invert(1);
+    position: absolute;
+    top: 13px;
+    left:28px;
+    
+}
+.logo{
+    
+    background-image: url("../images/logo.jpg");
+    height: 100px;
+    width: 96px;
+    background-size:100px  100px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:26px;
+    left: 87px;
+    border-radius: 6px;
+    border-color: black;
+    border-width: 3px;
+}
+
+
+.home{
+    position: absolute;
+    top: 150px;
+    left:0px;
+    background-color:transparent;
+    padding-left: 60px;
+    padding-top: 15px;
+    height: 35px;
+    width:210px ;
+    color: white;
+    border-width: .2px 0px 0px 0px;
+    border-style: solid;
+    border-color: #81d6e7;
+
+}
+.RoomBooking{
+    position: absolute;
+    top: 200px;
+    left:0px;
+    background-color:transparent;
+    padding-left: 60px;
+    padding-top: 15px;
+    height: 35px;
+    width:210px ;
+    color: white;
+    border-width: .2px 0px 0px 0px;
+    border-style: solid;
+    border-color: #82cfdf;
+}
+.RoomManagement{
+    position: absolute;
+    top: 250px;
+    left:0px;
+    background-color:transparent;
+    padding-left: 60px;
+    padding-top: 15px;
+    height: 35px;
+    width:210px ;
+    color: white;
+    border-width: .2px 0px 0px 0px;
+    border-style: solid;
+    border-color: #73c1d1;
+}
+.Dining{
+    position: absolute;
+    top: 300px;
+    left:0px;
+    background-color:transparent;
+    width:210px ;
+    padding-left: 60px;
+    padding-top: 14px;
+    height: 35px;
+    color: white;
+    border-width: .2px 0px 0px 0px;
+    border-style: solid;
+    border-color: #71bdcc;
+}
+.Inventory{
+    position: absolute;
+    top: 350px;
+    left:0px;
+    background-color:transparent;
+    width:210px ;
+    padding-left: 60px;
+    padding-top: 14px;
+    height: 35px;
+    color: white;
+    border-width: .2px 0px 0.2px 0px;
+    border-style: solid;
+    border-color: #71bdcc;
+}
+.home:hover {
+    background-color: #178399; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+    border-color: transparent;
+  }
+.RoomBooking:hover {
+    background-color: #178399; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+    border-color: transparent;
+    
+  }
+.RoomManagement:hover {
+    background-color: #178399; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+    border-color: transparent;
+  }
+.Dining:hover {
+    background-color: #178399; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+    border-color: transparent;
+  }
+.Inventory:hover {
+    background-color: #178399; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+    border-color: transparent;
+  }
