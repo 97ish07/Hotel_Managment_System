@@ -11,7 +11,7 @@
           <div class="col-6">
             @include('dashboard')
           </div>
-          <div class="col-6" style="margin-left: -300px; margin-top: 100px">
+          <div class="col-6" style="margin-left: -375px; margin-top: 100px">
             <div class="container-fluid">
                 <div class="form-group has-search">
                     <span class="fa fa-search form-control-feedback"></span>
@@ -34,17 +34,17 @@
                       </tr>
                     </thead>
                     <tbody>
-                      {{-- @foreach($dinein as $dinein) --}}
+                      @foreach($booking as $booking)
                       <tr>
-                          <td>123</td>
-                          <td>123</td>
-                          <td>123</td>
-                          <td>123</td>
-                          <td>123</td>
-                          <td>123</td>
-                          <td>123</td>
-                          <td>123</td>
-                          <td>123</td>
+                          <td>{{$booking->customer_id}}</td>
+                          <td>{{$booking->name}}</td>
+                          <td>{{$booking->contact_no}}</td>
+                          <td>{{$booking->email}}</td>
+                          <td>{{$booking->address}}</td>
+                          <td>{{$booking->booking_id}}</td>
+                          <td>{{$booking->room_id}}</td>
+                          <td>{{$booking->check_in_date}}</td>
+                          <td>{{$booking->check_out_date}}</td>
                           <td class="text-center" style="padding-right:60px">
                               <div class="row">
                                   <div class="col-6">
@@ -61,11 +61,19 @@
    
                           </td>
                       </tr>
-                      {{-- @endforeach --}}
+                      @endforeach
                   
                     </tbody>
                   </table>
                   <hr class = "line2">
+                  <div class="row">
+                      <div class="text-center col-6">
+                        <button class="btn btn-block btn-lg btn-outline-dark" type="button" onclick="window.location='/addRoomBooking'"> Add Details</button>
+                      </div>
+                      <div class="text-center col-6">
+                        <button class="btn btn-block btn-lg btn-outline-dark" type="button">Generate Reports</button>
+                      </div>
+                  </div>
               </div>
           </div>
       </div>

@@ -17,43 +17,43 @@
                     <div class="row justify-content-center">
                         <div class="menuBody">
                             <h2 class="menu-title mb-4">Add New Booking</h2>
-                            <form method="post">
+                            <form method="post" action="{{ route('booking.store') }}">
                             @csrf <!-- {{ csrf_field() }} -->            
                             <div class="form-group row">
                                 <label for="cusId" class="col-6">Customer ID :</label>
-                                <input type="text" class="form-control col-6" style="padding-right: 100px" id="cusId" placeholder="" name="customer_Id">
+                                <input type="text" class="form-control col-6" style="padding-right: 100px" id="cusId" placeholder="" name="customer_id">
                             </div>
                             <div class="form-group row">
                                 <label for="cusName" class="col-6">Customer Name :</label>
-                                <input type="text" class="form-control col-6" id="cusName" placeholder="" name="customer_Name">
+                                <input type="text" class="form-control col-6" id="cusName" placeholder="" name="name">
                             </div>
                             <div class="form-group row">
                                 <label for="cusContact" class="col-6">Contact No :</label>
-                                <input type="text" class="form-control col-6" id="cusContact" placeholder="" name="customer_Contact">
+                                <input type="text" class="form-control col-6" id="cusContact" placeholder="" name="contact_no">
                             </div>
                             <div class="form-group row">
                                 <label for="cusEmail" class="col-6">Email :</label>
-                                <input type="text" class="form-control col-6" id="cusEmail" placeholder="" name="customer_Email">
+                                <input type="text" class="form-control col-6" id="cusEmail" placeholder="" name="email">
                             </div>
                             <div class="form-group row">
                                 <label for="cusAddr" class="col-6">Address :</label>
-                                <input type="text" class="form-control col-6" id="cusAddr" placeholder="" name="customer_Addr">
+                                <input type="text" class="form-control col-6" id="cusAddr" placeholder="" name="address">
                             </div>
                             <div class="form-group row" >
                                 <label for="bookingId" class="col-6">Booking ID :</label>
-                                <input type="text" class="form-control col-6" id="bookingId" placeholder="" name="booking_Id">
+                                <input type="text" class="form-control col-6" id="bookingId" placeholder="" name="booking_id">
                             </div>
                             <div class="form-group row">
                                 <label for="roomId" class="col-6">Room Id :</label>
-                                <input type="text" class="form-control col-6" id="roomId" placeholder="" name="room_Id">
+                                <input type="text" class="form-control col-6" id="roomId" placeholder="" name="room_id">
                             </div>
                             <div class="form-group row">
                                 <label for="checkIn" class="col-6">Check In :</label>
-                                <input type="text" class="form-control col-6" id="checkIn" placeholder="" name="check_In">
+                                <input type="text" class="form-control col-6" id="checkIn" placeholder="" name="check_in_date">
                             </div>
                             <div class="form-group row">
                                 <label for="checkOut" class="col-6">Check Out :</label>
-                                <input type="text" class="form-control col-6" id="checkOut" placeholder="" name="check_Out">
+                                <input type="text" class="form-control col-6" id="checkOut" placeholder="" name="check_out_date">
                             </div>
                             <div class="row">
                                 <button type="submit" class="btn  btn-lg btn-block submit-btn col-6">Submit</button>

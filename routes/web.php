@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookingsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +25,6 @@ Route::get('/addRoomBooking', function () {
 Route::get('/roomBooking', function () {
     return view('booking_list');
 });
+
+Route::resource('booking', 'App\Http\Controllers\BookingsController');
 
