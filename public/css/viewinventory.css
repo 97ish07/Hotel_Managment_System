@@ -1,0 +1,64 @@
+.viewintable{
+    margin: 0px;
+    background-color: transparent;
+    height: 400px;
+    width: 950px;
+    position: absolute;
+    top: 170px;
+    left: 310px;
+    overflow-y: scroll;
+}
+#viewtable{
+    border: 0.5px;
+   
+}
+#viewtable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+#viewtable td {
+    border: 1px 0px 1px 0px ;
+    padding: 12px;
+  }
+  
+  
+ .tablehead {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #9cdce0;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    text-align: center;
+  
+  }
+    
+ .tablehead2 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-align: center;
+    
+  }
+  .tablehead2:hover{
+      background-color: rgb(241, 241, 241);
+  }
+
+  .search{
+      position: absolute;
+      top: 70px;
+      left: 700px;
+  }
+  .my-custom-scrollbar {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
