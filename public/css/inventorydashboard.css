@@ -1,0 +1,101 @@
+.addinventorybtn{
+    
+    background-color: rgb(255, 255, 255);
+    padding:19.5px 38px 19.5px 38px;
+    text-decoration: none;
+    position: absolute;
+    top: 245px;
+    left: 470px;
+    border: 3px solid;
+    border-color: #23c9c0;
+    border-radius: 6px;
+    font-size: 20px;
+   color: #23c9c0;
+}
+
+.viewinventorybtn{
+    
+    background-color: rgb(255, 255, 255);
+    padding:19.5px 32.5px;
+    text-decoration: none;
+    position: absolute;
+    
+    top: 245px;
+    left: 695px;
+    border: 3px solid;
+    border-color: #23c9c0;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #23c9c0;
+   
+  
+    
+    
+}
+.DeleteInventorybtn{
+    
+    background-color: rgb(255, 255, 255);
+    padding:19.5px 32.5px;
+    text-decoration: none;
+    position: absolute;
+    
+    top: 245px;
+    left: 915px;
+    border:3px solid;
+    border-color: #23c9c0;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #23c9c0;
+   
+}
+.Reportbtn{
+    
+    background-color: rgb(255, 255, 255);
+    padding:19.5px 32.5px;
+    text-decoration: none;
+    position: absolute;
+    
+    top: 245px;
+    left: 1145px;
+    border: 3px solid;
+    border-color: rgb(252, 62, 62);
+    border-radius: 6px;
+    font-size: 20px;
+    color: #f82727;
+      
+}
+.addinventorybtn:hover {
+    background-color: #23c9c0; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+   
+  }
+  .viewinventorybtn:hover {
+    background-color: #23c9c0; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+   
+  }
+  .DeleteInventorybtn:hover{
+    background-color: #23c9c0; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+ 
+   
+  }
+  .Reportbtn:hover {
+    background-color: #ee0000; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+   
+  }
+  .Reportbtn span.icon {
+    background: url(imgs/icon.png) no-repeat;
+    float: left;
+    width: 10px;
+    height: 40px;
+}
