@@ -1,0 +1,210 @@
+.formbackground{
+    position: absolute;
+    top: 113px;
+    left: 532px;
+    background-color: rgb(255, 255, 255);
+    height: 560px;
+    width: 760px;
+    border-radius: 10px;
+}
+.addlogo{
+    
+    background-image: url("../images/AddInventoryIcon.png");
+    height: 35px;
+    width: 35px;
+    background-size:35px  35px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    opacity: 0.6;
+}
+.texbox{
+
+    height: 40px;
+    width: 290px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    
+
+}
+.ItemName{
+    position: absolute;
+    left: 62px;
+    top: 150px;
+    border-radius: 8px;
+
+}
+
+.select{
+    position: absolute;
+    left: 63px;
+    top: 255px;
+    height: 44px;
+    width: 296px;
+    border-radius: 8px;
+    color:rgb(110, 110, 110) ;
+
+}
+
+.SupplireName{
+    
+        position: absolute;
+        left: 62px;
+        top: 360px;
+        border-radius: 8px;
+
+}
+.UnitPrice{
+    position: absolute;
+    left: 402px;
+    top: 150px;
+}
+.Quantity{
+    position: absolute;
+    left: 402px;
+    top: 255px;
+}
+.Description{
+    position: absolute;
+    left: 402px;
+    top: 360px;
+}
+.l1{
+    position:absolute;
+    left: 66px;
+    top: 232px;
+    
+}
+.l1::first-letter {
+    color: rgb(255, 57, 57)
+}
+
+.l2{
+    position:absolute;
+    left: 66px;
+    top: 127px;
+    
+}
+.l2::first-letter {
+    color: rgb(255, 57, 57)
+}
+.l3{
+    position:absolute;
+    left: 66px;
+    top: 337px;
+    
+}
+.l3::first-letter {
+    color: rgb(255, 57, 57)
+}
+.l4{
+    position:absolute;
+    left: 402px;
+    top: 127px;
+    
+}
+.l4::first-letter {
+    color: rgb(255, 57, 57)
+}
+.l5{
+    position:absolute;
+    left: 402px;
+    top: 232px;
+    
+}
+.l5::first-letter {
+    color: rgb(255, 57, 57)
+}
+.l6{
+    position:absolute;
+    left: 402px;
+    top: 337px;
+    
+}
+.l6::first-letter {
+    color: rgb(255, 57, 57)
+}
+.submitbtn{
+    height: 38px;
+    width: 130px;
+    position: absolute;
+    left: 62px;
+    top: 470px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    background-color: rgb(3, 168, 245);
+    font-size: large;
+    border-color:rgb(0, 217, 255);
+}
+.submitbtn:hover{
+    background-color: rgb(0, 130, 190);
+}
+
+.clearbtn{
+    height: 38px;
+    width: 130px;
+    position: absolute;
+    left: 222px;
+    top: 470px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    background-color: rgb(255, 62, 62);
+    font-size: large;
+    border-color: rgb(255, 0, 0);
+}
+.clearbtn:hover{
+    background-color: rgb(255, 19, 19);
+}
+.title{
+    font-size: 30px;
+    position:absolute;
+    top: 32px;
+    left: 120px;
+}
+.error2{
+
+    position:absolute;
+    left: 62px;
+    top: 200px;
+    color: red;
+}
+.error3{
+
+    position:absolute;
+    left: 62px;
+    top: 410px;
+    color: red;
+}
+.error4{
+
+    position:absolute;
+    left: 402px;
+    top: 200px;
+    color: red;
+}
+.error5{
+
+    position:absolute;
+    left: 402px;
+    top: 305px;
+    color: red;
+}
+.error6{
+
+    position:absolute;
+    left: 402px;
+    top: 410px;
+    color: red;
+}
+
+
+.text-success{
+    background-color: aqua;
+    color: black;
+}
