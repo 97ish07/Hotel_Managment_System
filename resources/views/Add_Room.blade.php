@@ -19,26 +19,26 @@
                 <div class="formbackground">
                   <div class="title">Add Room</div>
                   <div class="addlogo"></div>
-                    <form action="add_inventory" method="POST" id="submit_form" >
+                    <form action="Add_Room" method="POST" id="submit_form" >
                             @csrf 
                             <label class="l1" ><span>*</span> Room type</label>
-                             <select class="select" name="ItemType" placeholder="Enter Item type">
+                             <select class="select" name="roomType" placeholder="Enter Item type">
                                <option selected>Select Room Type</option>
                                 <option value="Food">Single Room</option>
                                 <option value="Electric">Double Room</option>
                                 <option value="inventory">Triple Room</option>
                              </select>
-                             <span>@error('ItemType'){{$message}}@enderror</span>
+                             <span>@error('RoomType'){{$message}}@enderror</span>
                      <label class="l2" ><span>*</span> Room ID</label>
-                     <div class="ItemName"><input type="text" name="ItemName" placeholder="Enter Room ID" class="texbox"></div></br><div class="error2"><span>@error('ItemName'){{$message}}@enderror</span></div></br></br>
+                     <div class="ItemName"><input type="text" name="roomID" placeholder="Enter Room ID" class="texbox"></div></br><div class="error2"><span>@error('RoomID'){{$message}}@enderror</span></div></br></br>
                      <label class="l3" ><span>*</span> Room Status</label>  
-                     <div class="SupplireName"><input type="text" name="SupplireName" placeholder="Enter Room Status" class="texbox"></div></br><div class="error3"><span>@error('SupplireName'){{$message}}@enderror</span></div></br></br>
+                     <div class="SupplireName"><input type="text" name="roomStatus" placeholder="Enter Room Status" class="texbox"></div></br><div class="error3"><span>@error('RoomStatus'){{$message}}@enderror</span></div></br></br>
                      <label class="l4" ><span>*</span> Floor Number</label>     
-                     <div class="UnitPrice"><input type="text" name="UnitPrice" placeholder="Enter Floor Number" class="texbox"></div></br><div class="error4"><span>@error('UnitPrice'){{$message}}@enderror</span></div></br></br>
+                     <div class="UnitPrice"><input type="text" name="floorNumber" placeholder="Enter Floor Number" class="texbox"></div></br><div class="error4"><span>@error('FloorNumber'){{$message}}@enderror</span></div></br></br>
                      <label class="l5" ><span>*</span> Price (Rs:)</label>           
-                     <div class="Quantity"><input type="text" name="Quantity" placeholder="Enter Price" class="texbox"></div></br><div class="error5"><span>@error('Quantity'){{$message}}@enderror</span></div></br></br>
+                     <div class="Quantity"><input type="text" name="price" placeholder="Enter Price" class="texbox"></div></br><div class="error5"><span>@error('Price'){{$message}}@enderror</span></div></br></br>
                      <label class="l6" ><span>*</span> Description</label>                
-                     <div class="Description"><input type="text" name="Description" placeholder="Description" class="texbox"></div></br><div class="error6"><span>@error('Description'){{$message}}@enderror</span></div></br></br>
+                     <div class="Description"><input type="text" name="description" placeholder="Description" class="texbox"></div></br><div class="error6"><span>@error('Description'){{$message}}@enderror</span></div></br></br>
                       <button  type="submit" class="submitbtn">submit</button><div id="app">
         
     </div>
