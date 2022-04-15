@@ -19,7 +19,7 @@
                 <div class="formbackground">
                   <div class="title">Add Room</div>
                   <div class="addlogo"></div>
-                    <form action="addRoom" method="POST" id="submit_form" >
+                    <form action="Add_Room" method="POST" id="submit_form" >
                             @csrf 
                             <label class="l1" ><span>*</span> Room type</label>
                              <select class="select" name="roomType" placeholder="Enter Item type">
