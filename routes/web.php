@@ -73,3 +73,7 @@ Route::get('test',[InventoryController::class,'ShowInventoryDataTest']);
 //add room route
 Route::view('Add_Room','Add_Room');
 Route::post('Add_Room',[RoomController::class,'AddRoom']);
+
+
+//route for room list
+Route::get('View_Room',[RoomController::class,'ShowRoomData']);
