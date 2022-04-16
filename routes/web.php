@@ -14,7 +14,7 @@ use App\Http\Controllers\RoomController;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('Room_Dashboard');
 });
 
 
