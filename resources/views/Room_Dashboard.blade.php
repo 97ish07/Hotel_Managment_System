@@ -19,7 +19,7 @@
             
 
                  <a href="Add_Room" class="addinventorybtn"> Add Room</a>
-                 <a href="view_inventory" class="viewinventorybtn" > View Room </a> 
+                 <a href="View_Room" class="viewinventorybtn" > View Room </a> 
                  <a href="add_inventory" class="DeleteInventorybtn">Delete Room</a>
                  <a href="view_inventory" class="Reportbtn" > Genarate Report  </a> 
                     
