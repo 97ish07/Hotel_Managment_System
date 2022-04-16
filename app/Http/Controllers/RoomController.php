@@ -8,8 +8,11 @@ use Illuminate\Support\Facades\DB;
 
 class RoomController extends Controller
 {
-    //
+     function ShowRoomData(){
 
+        $data =rooms::all();
+        return view('View_Room',['Room_key'=>$data]);
+     }
 
 function AddRoom(Request $req ){
 
