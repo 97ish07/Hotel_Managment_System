@@ -13,15 +13,15 @@ class RoomController extends Controller
 
 function AddRoom(Request $req ){
 
-        // $req->validate([
-        //     'ItemId'=>'required',
-        //     'RoomID'=>'required',
-        //     'FloorNumber'=>'required',
-        //     'RoomType'=>'required',
-        //     'Price'=>'required',
-        //     'RoomStatus'=>'required',
-        //      'Description'=>'required'
-        // ]);
+        $req->validate([
+            // 'ItemId'=>'required',
+            'RoomID'=>'required',
+            'FloorNumber'=>'required',
+            'RoomType'=>'required',
+            'Price'=>'required',
+            'RoomStatus'=>'required',
+             'Description'=>'required'
+        ]);
 
         $addroom= new rooms;
 
