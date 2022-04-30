@@ -77,3 +77,8 @@ Route::post('Add_Room',[RoomController::class,'AddRoom']);
 
 //route for room list
 Route::get('View_Room',[RoomController::class,'ShowRoomData']);
+
+Route::view('Room_Dashboard','Room_Dashboard');
+
+//route for update room
+Route::get('update/{ID}',[RoomController::class,'UpdateRoomData']);

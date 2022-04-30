@@ -1,7 +1,23 @@
+.invdashboardback {
+    background-position: center;
+    height: 675px; /* Screen height */
+    width: 1300px; /* Screen width */
+    background-size: 85vw 87vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50px;
+    left: 114px;
+    
+    border-radius: 20px;
+    opacity: .5;
+    border-color: rgb(171, 173, 173);
+    border-style: solid;
+    border-width: 0px;
+  }
 .formbackground{
     position: absolute;
-    top: 113px;
-    left: 532px;
+    top: 106px;
+    left: 522px;
     background-color: rgb(255, 255, 255);
     height: 560px;
     width: 760px;
@@ -167,6 +183,14 @@
     top: 32px;
     left: 120px;
 }
+
+.error1{
+
+    position:absolute;
+    right: 402px;
+    top: 305px;
+    color: red;
+}
 .error2{
 
     position:absolute;
@@ -208,3 +232,4 @@
     background-color: aqua;
     color: black;
 }
+

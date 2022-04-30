@@ -8,13 +8,15 @@
 
     <body>
     <div class="background">
-
+    <div class="version-tag">Version 1.1.0</div>
         <div class="viewindashboardback">
+        <div class="titlelogoview"></div>       
+        <div class="titleview">View Rooms</div>
             <div class="search">
                 <form class="search_inventory" type="get" action="{{ url('/eventSearch') }}">
-                    <input type="search" name="query" placeholder="Search..">
-                    <button type="submit"><i class="fa fa-search"></i> search</button>
-            </div>
+                    <input type="search" name="query" placeholder="Search.." class="searchbox">
+                    <button type="submit" class="searchbtn"><i class="fa-search"></i> </button>
+                    </div>
             </form>
             </center>
             <div class="viewintable">
@@ -37,7 +39,11 @@
         <td>{{$room['RoomType']}}</td>
         <td>{{$room['Price']}}</td>
         <td>{{$room['RoomStatus']}}</td>
-        <td>{{$room['RoomStatus']}}</td>
+        <td>{{$room['Description']}}</td>
+
+        <td>
+            <a href={{"update/".$room['ID']}}>update</a>
+        </td>
     </tr>
       @endforeach
     </table>
@@ -60,7 +66,7 @@
                     <div class="RoomBookinglogo"></div>Room Booking
                 </div>
             </a>
-            <a href="#">
+            <a href="Room_Dashboard">
                 <div class="RoomManagement">
                     <div class="RoomManagementlogo"></div>Room Management
                 </div>

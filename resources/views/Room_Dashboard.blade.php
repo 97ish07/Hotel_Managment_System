@@ -1,3 +1,5 @@
+
+        
 <!DOCTYPE html>
 <html>
 
@@ -13,15 +15,17 @@
     <body >
     
         <div class="background" >
-                 
+        <div class="version-tag">Version 1.1.0</div>
             <div class="invdashboardback"></div>
 
+           <div class="rmlogo"></div>        
+        <div class="title">Room Management</div>
             
 
                  <a href="Add_Room" class="addinventorybtn"> Add Room</a>
                  <a href="View_Room" class="viewinventorybtn" > View Room </a> 
-                 <a href="add_inventory" class="DeleteInventorybtn">Delete Room</a>
-                 <a href="view_inventory" class="Reportbtn" > Genarate Report  </a> 
+                 <a href="Add_Room" class="DeleteInventorybtn">Delete Room</a>
+                 <a href="View_Room" class="Reportbtn" > Genarate Report  </a> 
                     
                     <div class="navigationbar">
                   

@@ -1,53 +1,5 @@
-/* .test-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 30px;
-    background-color: red;
-    border-radius: 10px 10px 10px 10px;
-    animation: Animation;
-    animation-duration: 10s;
-}
 
-@media (max-width: 480px) {
-    .test-box {
-        background-color: blue;
-        border-radius: 10px 10px 10px 10px;
-        width: 100px;
-        height: 30px;
-    }
-}
-
-@media (max-width: 480px) {
-    .test-box {
-        background-color: purple;
-        border-radius: 100px 0px 100px 0px;
-        width: 500px;
-        height: 300px;
-    }
-}
-
-@media (max-width: 769px) {
-    .test-box {
-        background-color: greenyellow;
-        border-radius: 0px 100px 1px 100px;
-        width: 300px;
-        height: 500px;
-    }
-}
-
-@keyframes Animation {
-    0%{
-
-    }
-    100% {
-
-    }
-} */
-
-.version-tag {
+/* .version-tag {
     background-color: #ffffff88;
     font-family: sans-serif;
     font-size: 11px;
@@ -60,7 +12,7 @@
     transform: translate(-50%, -50%);
     transition: .2s ease-in-out;
     cursor: wait;
-}
+} */
 
 .version-tag:hover {
     background-color: #000000aa;
@@ -89,55 +41,28 @@ body {
 }
 .dashboardback {
     background-position: center;
-    height: 670px;
+    height: 675px;
     width: 1300px;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    top: 43px;
-    left: 123px;
+    top: 50px;
+    left: 114px;
     border-radius: 20px;
     opacity: 0.7;
     border-color: rgb(171, 173, 173);
     border-style: solid;
     border-width: 0px;
 }
-/*inventory dashboard background reduce opacity 0.7 to .05*/
-.invdashboardback {
-    background-position: center;
-    height: 670px;
-    width: 1300px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 43px;
-    left: 123px;
-    border-radius: 20px;
-    opacity: 0.5;
-    border-color: rgb(171, 173, 173);
-    border-style: solid;
-    border-width: 0px;
-}
-.viewindashboardback {
-    background-position: center;
-    height: 670px;
-    width: 1300px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 43px;
-    left: 123px;
-    border-radius: 20px;
-    opacity: 1;
-    border-color: rgb(171, 173, 173);
-    border-style: solid;
-    border-width: 0px;
-}
+
+
 .navigationbar {
     background-position: center;
-    height: 670px;
+    height: 675px;
     width: 270px;
     background-image: linear-gradient(#8bd7dc, #1d7a8d);
     position: absolute;
-    top: 43px;
-    left: 123px;
+    top: 50px;
+    left: 114px;
     border-radius: 20px 0px 0px 19px;
     opacity: 1px;
 }
@@ -319,6 +244,169 @@ body {
     border-width: 0.6px 0px 0px 0px;
     border-style: solid;
     border-color: transparent;
+}
+/* ------------------dashboard main button-------------------- */
+.RoomBookingbtn {
+    position: absolute;
+    top: 130px;
+    left: 415px;
+    background-color: transparent;
+    padding-left: 60px;
+    padding-top: 15px;
+    height: 230px;
+    width: 200px;
+    color: rgb(0, 0, 0);
+    border-width: 1px;
+    /* border-style: solid;
+    border-color: #979797; */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.5);
+}
+
+.RoomManagementbtn {
+    position: absolute;
+    top: 130px;
+    left: 710px;
+    background-color: transparent;
+    padding-left: 60px;
+    padding-top: 15px;
+    height: 230px;
+    width: 200px;
+    color: rgb(0, 0, 0);
+    /* border-width: 1px;
+    border-style: solid; */
+    border-color: #979797;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.5);
+}
+.Diningbtn {
+    position: absolute;
+    top: 407px;
+    left: 415px;
+    background-color: transparent;
+    height: 230px;
+    width: 200px;
+    padding-left: 60px;
+    padding-top: 14px;;
+    color: rgb(0, 0, 0);
+    /* border-width: 1px;
+    border-style: solid; */
+    border-color: #979797;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.5);
+}
+.Inventorybtn {
+    position: absolute;
+    top: 407px;
+    left: 710px;
+    background-color: transparent;
+    padding-left: 60px;
+    padding-top: 14px;
+    height: 230px;
+    width: 200px;
+    color: rgb(0, 0, 0);
+    /* border-width: px;
+    border-style: solid; */
+    
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.5);
+    
+}
+.bk{
+    position: absolute;
+    top: 180px;
+    left: 97px;
+    font-size: 22px;
+    text-align: center;
+    font-style:normal;
+}
+.bk1{
+    position: absolute;
+    top: 180px;
+    left: 46px;
+    font-size: 22px;
+    text-align: center;
+}
+.bk2{
+    position: absolute;
+    top: 180px;
+    left: 30px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.RoomBookinglogo1 {
+    background-image: url("../images/bookingicon.png");
+    height: 140px;
+    width: 140px;
+    background-size: 140px 140px;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    position: absolute;
+    top: 20px;
+    left: 62px;
+}
+.RoomManagementlogo1 {
+    background-image: url("../images/roomManagementLogo.png");
+    height: 140px;
+    width: 140px;
+    background-size: 140px 140px;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    position: absolute;
+    top: 20px;
+    left: 62px;
+}
+.Dininglogo1 {
+    background-image: url("../images/DiningLogo.png");
+    height: 140px;
+    width: 140px;
+    background-size: 140px 140px;
+    background-repeat: no-repeat;
+    position: relative;
+  
+    position: absolute;
+    top: 20px;
+    left: 62px;
+}
+.Inventorylogo1 {
+    background-image: url("../images/InventoryLogo.png");
+    height: 140px;
+    width: 140px;
+    background-size: 140px 140px;
+    background-repeat: no-repeat;
+    position: relative;
+   
+    position: absolute;
+    top: 20px;
+    left: 62px;
+}
+
+.RoomBookingbtn:hover{
+  
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.RoomManagementbtn:hover{
+  
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.Diningbtn:hover{
+  
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.Inventorybtn:hover{
+  
+    cursor: pointer;
+    transform: scale(1.1);
 }
 /*---------------------------------------------------------
   .logo:before {
