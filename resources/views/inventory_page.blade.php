@@ -18,7 +18,7 @@
                  
             <div class="invdashboardback"></div>
 
-            
+             <div class="title">Inventory Management</div>
 
                  <a href="add_inventory" class="addinventorybtn"> Add Inventory</a>
                  <a href="view_inventory" class="viewinventorybtn" > View Inventory  </a> 
