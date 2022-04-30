@@ -38,4 +38,8 @@ function AddRoom(Request $req ){
         $addroom->save();
         return redirect('Add_Room');
     }
+
+    function UpdateRoomData($ID){
+       return rooms::find($ID);
+    }
 }
