@@ -40,6 +40,7 @@ function AddRoom(Request $req ){
     }
 
     function UpdateRoomData($ID){
-       return rooms::find($ID);
+       $data = rooms::find($ID);
+       return view('updateRoom',['data' =>$data]);
     }
 }
