@@ -43,4 +43,21 @@ function AddRoom(Request $req ){
        $data = rooms::find($ID);
        return view('updateRoom',['data' =>$data]);
     }
+
+   function update(Request $req)
+   {
+      $data=rooms::find($req->ID);
+      $data->RoomID=$req->RoomID;
+       $data->FloorNumber=$req->FloorNumber;
+        $data->RoomType=$req->RoomType;
+         $data->Price=$req->Price;
+           $data->RoomStatus=$req->RoomStatus;
+            $data->Description=$req->Description;
+            $data -> save();
+            return redirect('View_Room');
+
+
+        
+
+   }
 }

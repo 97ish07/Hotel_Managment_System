@@ -30,6 +30,7 @@
         <td>Price</td>
         <td>Room Status</td>
         <td>Description</td>
+        <td>Update</td>
         </tr>
         @foreach($Room_key as $room)
         <tr class="tablehead2">
