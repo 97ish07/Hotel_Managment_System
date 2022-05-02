@@ -39,25 +39,33 @@ function AddRoom(Request $req ){
         return redirect('Add_Room');
     }
 
-    function UpdateRoomData($ID){
-       $data = rooms::find($ID);
-       return view('updateRoom',['data' =>$data]);
+    function ShowUpdateRoomData($ID)
+    {
+        $data=rooms::find($ID);
+        return view('updateRoom',['update_key'=>$data]);
     }
 
-   function update(Request $req)
-   {
-      $data=rooms::find($req->ID);
-      $data->RoomID=$req->RoomID;
-       $data->FloorNumber=$req->FloorNumber;
-        $data->RoomType=$req->RoomType;
-         $data->Price=$req->Price;
-           $data->RoomStatus=$req->RoomStatus;
-            $data->Description=$req->Description;
-            $data -> save();
-            return redirect('View_Room');
+    function UpdateRoomData(Request $req)
+    {
 
+        $req->validate([
+            //'ItemId'=>'required',
+            'roomID'=>'required',
+            'floorNumber'=>'required',
+            'roomType'=>'required',
+            'price'=>'required',
+            'roomStatus'=>'required',
+            'description'=>'required'
+        ]);
 
-        
-
-   }
+         $data=rooms::find($req->ID);
+         $data->RoomID=$req->roomID;
+         $data->FloorNumber=$req->floorNumber;
+         $data->RoomType=$req->roomType;
+         $data->Price=$req->price;
+         $data->RoomStatus=$req->roomStatus;
+         $data->Description=$req->description;
+         $data->save();
+         return redirect('view_Room');
+    }
 }

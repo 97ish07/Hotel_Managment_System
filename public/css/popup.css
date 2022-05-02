@@ -1,0 +1,191 @@
+/* .popup-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2 solid #ffffff88;
+    border-radius: 20px;
+    width: 300px;
+    height: 250px;
+    z-index: 2000;
+}
+
+.popup-header {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: 10px;
+    font-size: large;
+    color: black;
+}
+
+.popup-body {
+    color: #000;
+    font-size: small;
+}
+
+.popup-btn {
+    padding: 10px;
+    width: 150px;
+    transition: .2s ease-in-out;
+}
+
+.popup-btn:hover {
+    opacity: 90%;
+}
+
+.popup-btn-group {
+    display: flex;
+}
+
+.btn-primary {
+    background-color: green;
+}
+
+.btn-secondary {
+    background-color: red;
+} */
+
+/* .open-button {
+    background-color: #555;
+    color: rgb(155, 1, 1);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  } */
+  .form-popup {
+    display: none;
+    /* border: 1px solid #3f3f3f; */
+    z-index: 9;
+    border-radius: 6px;
+    height: 130px;
+    width: 400px;
+    position: absolute; 
+    top: 200px;
+    left: 600px;
+    /* background-color: aliceblue; */
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    /* position: absolute; */
+    /* top: 400px;
+    left: 800px; */
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: rgb(255, 203, 203);
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .btn{
+    position: absolute;
+    top:100px;
+    left: 280px;
+    height: 30px;
+    width: 70px;
+    background-color: #fa3e3e;
+    border-style: none;
+    border-radius: 2px;
+    border-width: 1px;
+    /* box-shadow: 2px 2px 4px rgb(255, 131, 131); */
+  }
+
+  .btncancel{
+    position: absolute;
+    top:100px;
+    left: 200px;
+    height: 30px;
+    width: 70px;
+    background-color: rgb(165, 163, 163);
+    /* border-style: none; */
+    /* border-color: black; */
+    border-width: 1px;
+    border-radius: 2px;
+    /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); */
+    border-style: none;
+    color: #ffffff;
+  }
+  .btncance3{
+    position: absolute;
+    top:7px;
+    left: 330px;
+    background: transparent;
+    height: 10px;
+    width: 10px;
+     border-style: none; 
+    /* border-color: black; */
+    
+    /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); */
+    
+  }
+  .textdec{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .back{
+    position: absolute;
+    top:-300px ;
+    left: -720px;
+    height: 825px;
+    width: 1542px;
+    background: rgba(37, 37, 37, 0.8);
+  }
+  .popupbox{
+
+    position: absolute;
+    top: 365px;
+    left: 580px;
+    height: 140px;
+    width: 360px;
+   background-color: aliceblue;
+   border-radius: 4px;
+  }
+  .text1{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 20px;
+      color: #2b2a2a;
+  }
+  .text2{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    font-size: 14px;
+    color: #2b2a2a;
+}
+.btnpopuplogo1{
+  background-image: url("../images/closePopup.png");
+  height: 10px;
+  width: 10px;
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  position: absolute;
+ opacity: .5;
+ 
+}
