@@ -17,43 +17,43 @@
         <div class="version-tag">Version 1.1.0</div>
             <div class="invdashboardback"></div>
                 <div class="formbackground">
-                  <div class="title">Update Inventory</div>
+                  <div class="title">Update Room</div>
                   <div class="addlogo"></div>
 
                 
-   <form action="/update_inventory" method="POST" >
+   <form action="/updateRoom" method="POST" >
     @csrf 
     
-    <input type="hidden" name="id" value={{$update_key['id']}}></br></br></br>
+    <input type="hidden" name="ID" value={{$update_key['ID']}}></br></br></br>
 
-<label class="l1" ><span>*</span> Item Type</label>    
-<select class="select" name="ItemType" placeholder="Enter Item type">
-                               <option selected value={{$update_key['Item_Type']}} >Select Item Type</option>
-                                <option value="Food">Food</option>
-                                <option value="Electric">Electrical</option>
-                                <option value="Furniture">Furniture</option>
-                                <option value="Stationary">Stationary</option>
+<label class="l1" ><span>*</span> Room Type</label>    
+<select class="select" name="roomType" placeholder="Enter Room type">
+                               <option selected value={{$update_key['roomType']}} >Select Room Type</option>
+                                <option value="Singale Room">Single Room</option>
+                                <option value="Double Room">Double Room</option>
+                                <option value="Trible Room">Trible Room</option>
+                                <option value="Family Room">Family Room</option>
                                 <option value="Other">Other</option>
                              </select>
 
-   <label class="l2" ><span>*</span> Item Name</label>
-   <div class="ItemName"><input type="text" name="ItemName" value={{$update_key['Item_Name']}} class="texbox"></div></br><div class="error2"><span>@error('ItemName'){{$message}}@enderror</span></div></br></br>
+   <label class="l2" ><span>*</span> Room ID</label>
+   <div class="ItemName"><input type="text" name="roomID" value={{$update_key['roomID']}} class="texbox"></div></br><div class="error2"><span>@error('roomID'){{$message}}@enderror</span></div></br></br>
 
 
-    <label class="l3" ><span>*</span> Supplire Name</label>  
-   <div class="SupplireName"><input type="text" name="SupplireName" value={{$update_key['Supplire_Name']}} class="texbox"></div></br><div class="error3"><span>@error('SupplireName'){{$message}}@enderror</span></div></br></br>
+    <label class="l3" ><span>*</span> Room Status</label>  
+   <div class="SupplireName"><input type="text" name="roomStatus" value={{$update_key['roomStatus']}} class="texbox"></div></br><div class="error3"><span>@error('roomStatus'){{$message}}@enderror</span></div></br></br>
 
   
-    <label class="l4" ><span>*</span> Unit Price</label>     
-   <div class="UnitPrice"><input type="text" name="UnitPrice" value={{$update_key['Unit_Price']}} class="texbox"></div></br><div class="error4"><span>@error('UnitPrice'){{$message}}@enderror</span></div></br></br>
+    <label class="l4" ><span>*</span> Floor Number</label>     
+   <div class="UnitPrice"><input type="text" name="floorNumber" value={{$update_key['floorNumber']}} class="texbox"></div></br><div class="error4"><span>@error('floorNumber'){{$message}}@enderror</span></div></br></br>
 
 
-    <label class="l5" ><span>*</span> Quantity</label>           
-    <div class="Quantity"><input type="text" name="Quantity" value={{$update_key['Quantity']}} class="texbox"></div></br><div class="error5"><span>@error('Quantity'){{$message}}@enderror</span></div></br></br>
+    <label class="l5" ><span>*</span> Price (Rs:)</label>           
+    <div class="Quantity"><input type="text" name="price" value={{$update_key['price']}} class="texbox"></div></br><div class="error5"><span>@error('price'){{$message}}@enderror</span></div></br></br>
 
 
     <label class="l6" ><span>*</span> Description</label>                
-   <div class="Description"><input type="text" name="Description" value={{$update_key['Description']}} class="texbox"></div></br><div class="error6"><span>@error('Description'){{$message}}@enderror</span></div></br></br>
+   <div class="Description"><input type="text" name="description" value={{$update_key['description']}} class="texbox"></div></br><div class="error6"><span>@error('description'){{$message}}@enderror</span></div></br></br>
     
     <button  type="submit" class="submitbtn">Update</button><div id="app"></div>
 

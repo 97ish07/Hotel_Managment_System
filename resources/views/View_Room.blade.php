@@ -43,7 +43,8 @@
         <td>{{$room['Description']}}</td>
 
         <td>
-            <a href={{"update/".$room['ID']}}>update</a>
+            <a  href={{"updateRoom/".$room['ID']}}><div class="updte"></div></a>
+
         </td>
     </tr>
       @endforeach
