@@ -85,3 +85,7 @@ Route::view('Room_Dashboard','Room_Dashboard');
 Route::view('updateRoom','updateRoom');
 Route::get('updateRoom/{ID}',[RoomController::class,'ShowUpdateRoomData']);
 Route::post('updateRoom',[RoomController::class,'UpdateRoomData']);
+
+//delete room route
+Route::view('Delete_Room','Delete_Room');
+Route::get('DeleteRoomData/{ID}',[RoomController::class,'DeleteRoomData']);
