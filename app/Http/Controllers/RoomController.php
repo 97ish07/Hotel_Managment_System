@@ -77,4 +77,24 @@ function AddRoom(Request $req ){
         return redirect('Delete_Room');
     }
 
+    function ShowRoomDataTest(){
+
+    $data =rooms::all();
+    return view('Delete_Room',['Room_keys'=>$data]);
+    return rooms::all();
+}
+
+ public function eventsSearch(){
+
+        //search function 
+
+       $search_text = $_GET['query'];
+       $Room_key = rooms::where('RoomID','Like', '%'.$search_text.'%')->orWhere('FloorNumber','Like', '%'.$search_text.'%')
+        ->orWhere('RoomType','Like', '%'.$search_text.'%')->paginate(50);
+
+       return view('search_Room',compact('room_key'));
+
+      
+   }
+
 }
