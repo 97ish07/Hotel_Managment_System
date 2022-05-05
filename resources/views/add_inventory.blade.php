@@ -23,19 +23,21 @@
                 <div class="formbackground">
                   <div class="title">Add Inventory</div>
                   <div class="addlogo"></div>
-                    <form action="add_inventory" method="POST" id="submit_form" >
+                    <form action="add_inventory" method="POST" id="submit_form" onsubmit="myFunction()">
                             @csrf 
-                            <label class="l1" ><span>*</span> Item type</label>
+                            <label class="l1" ><span>*</span> Item Type</label>
                              <select class="select" name="ItemType" placeholder="Enter Item type">
                                <option selected>Select Item Type</option>
                                 <option value="Food">Food</option>
-                                <option value="Electric">Electric</option>
-                                <option value="inventory">inventory</option>
+                                <option value="Electric">Electrical</option>
+                                <option value="Furniture">Furniture</option>
+                                <option value="Stationary">Stationary</option>
+                                <option value="Other">Other</option>
                              </select>
                              <span>@error('ItemType'){{$message}}@enderror</span>
                      <label class="l2" ><span>*</span> Item Name</label>
                      <div class="ItemName"><input type="text" name="ItemName" placeholder="Enter Item Name" class="texbox"></div></br><div class="error2"><span>@error('ItemName'){{$message}}@enderror</span></div></br></br>
-                     <label class="l3" ><span>*</span> SupplireName</label>  
+                     <label class="l3" ><span>*</span> Supplire Name</label>  
                      <div class="SupplireName"><input type="text" name="SupplireName" placeholder="Enter Supplire Name" class="texbox"></div></br><div class="error3"><span>@error('SupplireName'){{$message}}@enderror</span></div></br></br>
                      <label class="l4" ><span>*</span> Unit Price</label>     
                      <div class="UnitPrice"><input type="text" name="UnitPrice" placeholder="Enter Unit Price(Rs)" class="texbox"></div></br><div class="error4"><span>@error('UnitPrice'){{$message}}@enderror</span></div></br></br>
@@ -43,7 +45,7 @@
                      <div class="Quantity"><input type="text" name="Quantity" placeholder="Enter Quantity" class="texbox"></div></br><div class="error5"><span>@error('Quantity'){{$message}}@enderror</span></div></br></br>
                      <label class="l6" ><span>*</span> Description</label>                
                      <div class="Description"><input type="text" name="Description" placeholder="Description" class="texbox"></div></br><div class="error6"><span>@error('Description'){{$message}}@enderror</span></div></br></br>
-                      <button  type="submit" class="submitbtn">submit</button><div id="app">
+                      <button  type="submit" class="submitbtn">Submit</button><div id="app">
         
     </div>
                       
@@ -64,7 +66,7 @@
 
                 </div>
         </div>
- 
+        
         
     </body>
 

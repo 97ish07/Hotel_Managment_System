@@ -14,14 +14,8 @@ use App\Http\Controllers\InventoryController;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('inventory_page');
 });
-
-
-
-// Route::get('/', function () {
-//     return view('inventory_page');
-// });
 //show inventory data
 Route::view('view_inventory','view_inventory');
 Route::get('view_inventory',[InventoryController::class,'ShowInventoryData']);
@@ -31,12 +25,12 @@ Route::view('add_inventory','add_inventory');
 Route::post('add_inventory',[InventoryController::class,'AddInventoryData']);
 
 //Delete inventory route
-
+Route::view('delete_inventory','delete_inventory');
 Route::get('DeleteInventoryData/{id}',[InventoryController::class,'DeleteInventoryData']);
 
 //update inventory route
-
-Route::get('ShowUpdateInventoryData/{id}',[InventoryController::class,'ShowUpdateInventoryData']);
+Route::view('update_inventory','update_inventory');
+Route::get('update_inventory/{id}',[InventoryController::class,'ShowUpdateInventoryData']);
 Route::post('update_inventory',[InventoryController::class,'UpdateInventoryData']);
 
 //search
@@ -69,4 +63,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::view('test','test');
 // Route::get('test',[InventoryController::class,'ShowInventoryDatas']);
 Route::get('test',[InventoryController::class,'ShowInventoryDataTest']);
+
+//pdf genrate
+
+Route::get('/nventorypdf',[EventController::class,'exportEventPDF']);
 

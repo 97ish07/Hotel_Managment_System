@@ -10,12 +10,14 @@
 <body>
 
     <div class="background">
-
+    <div class="version-tag">Version 1.1.0</div>
         <div class="viewindashboardback">
+        <div class="titlelogoview"></div>       
+        <div class="titleview">View Inventory</div>
             <div class="search">
                 <form class="search_inventory" type="get" action="{{ url('/eventSearch') }}">
-                    <input type="search" name="query" placeholder="Search..">
-                    <button type="submit"><i class="fa fa-search"></i> search</button>
+                    <input type="search" name="query" placeholder="Search.." class="searchbox">
+                    <button type="submit" class="searchbtn"><i class="fa-search"></i> </button>
             </div>
             </form>
             </center>
@@ -44,7 +46,7 @@
                         <td>{{$inventorys['Quantity']}}</td>
                         <td>{{$inventorys['Description']}}</td>
                         <!-- <td><a href={{"DeleteInventoryData/".$inventorys['id']}}>Delete</a></td> -->
-                        <td><a href={{"ShowUpdateInventoryData/".$inventorys['id']}}>Update</a></td>
+                        <td><a  href={{"update_inventory/".$inventorys['id']}}><div class="updte"></div></a></td>
 
                     </tr>
 

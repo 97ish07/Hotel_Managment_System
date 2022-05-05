@@ -1,10 +1,25 @@
+.viewindashboardback {
+  background-position: center;
+  height: 675px;
+  width: 1300px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+    top: 50px;
+    left: 114px;
+  border-radius: 20px;
+  opacity: 1;
+  border-color: rgb(171, 173, 173);
+  border-style: solid;
+  border-width: 0px;
+ 
+}
 .viewintable{
     margin: 0px;
     background-color: transparent;
     height: 400px;
     width: 950px;
     position: absolute;
-    top: 170px;
+    top: 200px;
     left: 310px;
     overflow-y: scroll;
 }
@@ -28,7 +43,7 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #9cdce0;
+    background-color: #cccccc;
     color: rgb(0, 0, 0);
     font-size: 17px;
     text-align: center;
@@ -62,3 +77,88 @@
     .table-wrapper-scroll-y {
     display: block;
     }
+    td{
+      border-style: groove;
+      border-width: 1px;
+    }
+    .search{
+      position: absolute;
+      height: 40px;
+      width: 500px;
+      top: 140px;
+      left: 900px;
+    }
+    .searchbox{
+     
+      height: 35px;
+      width: 360px;
+      border-color: rgb(74, 187, 190);
+      border-radius: 8px;
+      border-style: groove;
+      color: #752c2c;
+      border-width: 1px;
+    }
+    .searchbtn{
+      position: absolute;
+      top: 5px;
+      left: 328px;
+      height: 34px;
+      width: 34px;
+      
+      border-radius: 7px;
+     border-style: none;
+      color: white;
+      background-color:transparent;
+      font-size: 10px;
+      background-image: url("../images/searchicon.png");
+      height:25px;
+      width: 25px;
+      background-size: 25px 25px;
+      background-repeat: no-repeat;
+      filter:drop-shadow(89);
+     
+      
+      
+    }
+    .titlelogoview{
+      background-image: url("../images/viewlogo.png");
+      height: 450px;
+      width: 45px;
+      background-size: 45px 45px;
+      background-repeat: no-repeat;
+     
+      position: absolute;
+      top: 45px;
+      left: 350px;
+    }
+    .titleview{
+      position: absolute;
+      top: 50px;
+      left: 410px;
+      font-size: 32px;
+      color: #202020;
+    }
+    .updte{
+      background-image: url("../images/uPDATELOGO.png");
+      height: 25px;
+      width: 25px;
+      background-size: 25px 25px;
+      background-repeat: no-repeat;
+      margin: 0px 0px 0px 25px;
+      /* text-align: center; */
+     
+      
+
+    }
+    /* .Inventorylogo1 {
+      background-image: url("../images/InventoryLogo.png");
+      height: 140px;
+      width: 140px;
+      background-size: 140px 140px;
+      background-repeat: no-repeat;
+      position: relative;
+     
+      position: absolute;
+      top: 20px;
+      left: 62px;
+  } */

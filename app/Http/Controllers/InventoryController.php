@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\inventory;
 use Illuminate\Support\Facades\DB;
+use PDF;
 
 
 class InventoryController extends Controller
@@ -48,7 +49,7 @@ class InventoryController extends Controller
 
         $data=inventory::find($id);
         $data->delete();
-        return redirect('view_inventory');
+        return redirect('test');
     }
 
     function ShowUpdateInventoryData($id)
@@ -59,6 +60,17 @@ class InventoryController extends Controller
 
     function UpdateInventoryData(Request $req)
     {
+
+        $req->validate([
+            //'ItemId'=>'required',
+            'ItemType'=>'required',
+            'ItemName'=>'required',
+            'SupplireName'=>'required',
+            'UnitPrice'=>'required',
+            'Quantity'=>'required',
+            'Description'=>'required'
+        ]);
+
          $data=inventory::find($req->id);
          $data->Item_Type=$req->ItemType;
          $data->Item_Name=$req->ItemName;
@@ -94,10 +106,17 @@ function ShowInventoryDataTest(){
 
     $data =inventory::all();
     return view('test',['inventory_keys'=>$data]);
-    //return inventory::all();
+    return inventory::all();
 }
 
+//pdf genrte
+// public function exportEventPDF(){
+//     $events = inventory::latest()->paginate(15);
+//     $pdf=PDF::loadview('events.indexpdf',compact('events'));
+//     return $pdf->download('Event-list.pdf');
 
+//     //generate pdf
+// }
 
 
 }
