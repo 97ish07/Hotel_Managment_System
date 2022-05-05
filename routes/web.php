@@ -89,3 +89,6 @@ Route::post('updateRoom',[RoomController::class,'UpdateRoomData']);
 //delete room route
 Route::view('Delete_Room','Delete_Room');
 Route::get('DeleteRoomData/{ID}',[RoomController::class,'DeleteRoomData']);
+
+//search room route
+Route::get('/eventsSearch',[RoomController::class,'eventsSearch']);
