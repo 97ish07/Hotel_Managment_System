@@ -16,7 +16,7 @@
         <div class="titlelogoview"></div>       
         <div class="titleview">Delete Room</div>
         <div class="search">
-                <form class="search_inventory" type="get" action="{{ url('/eventSearch') }}">
+                <form class="Search_Room" type="get" action="{{ url('/eventsSearch') }}">
                     <input type="search" name="query" placeholder="Search.." class="searchbox">
                     <button type="submit" class="searchbtn"><i class="fa-search"></i> </button>
             </div>
@@ -30,7 +30,7 @@
     <div class="popupbox">
         <div class="text1">Delete Confirmation</div>
         <div class="text2">Are you sure you want to delete this room details ?</div>
-    <button type="submit" class="btn">@foreach($Room_keys as $roomss)<span><td><a  class ="textdec" href={{"DeleteRoomData/".$rooms['ID']}}>@endforeach Delete</a></td></span></button>
+    <button type="submit" class="btn">@foreach($Room_keys as $roomss)<span><td><a  class ="textdec" href={{"DeleteRoomData/".$roomss['ID']}}>@endforeach Delete</a></td></span></button>
     
     <button type="button" class="btncancel" onclick="closeForm()">Close</button>
     <button type="button" class="btncance3" onclick="closeForm()"><span class="btnpopuplogo1"></span></button>
@@ -55,16 +55,16 @@
                         
 
                     </tr>
-                    @foreach($Room_key as $room)
+                    @foreach($Room_keys as $roomss)
 
                     <tr class="tablehead2">
-                        <td>{{$room['ID']}}</td>
-                        <td>{{$room['RoomID']}}</td>
-                        <td>{{$room['FloorNumber']}}</td>
-                        <td>{{$room['RoomType']}}</td>
-                        <td>{{$room['Price']}}</td>
-                        <td>{{$room['RoomStatus']}}</td>
-                        <td>{{$room['Description']}}</td>
+                        <td>{{$roomss['ID']}}</td>
+                        <td>{{$roomss['RoomID']}}</td>
+                        <td>{{$roomss['FloorNumber']}}</td>
+                        <td>{{$roomss['RoomType']}}</td>
+                        <td>{{$roomss['Price']}}</td>
+                        <td>{{$roomss['RoomStatus']}}</td>
+                        <td>{{$roomss['Description']}}</td>
                         
                         <!-- <td><a href={{"ShowUpdateInventoryData/".$inventoryss['id']}}>Update</a></td> -->
                         <td><button  onclick="openForm()">delete</button></td>

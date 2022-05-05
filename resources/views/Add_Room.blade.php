@@ -10,13 +10,7 @@
     </head>
 
     <body >
-
-                    <script>
-                function myFunction() {
-                  alert("Room added successfully");
-                }
-                </script>
-
+         
     
     <div id="app">
        
