@@ -30,7 +30,7 @@
     <div class="popupbox">
         <div class="text1">Delete Confirmation</div>
         <div class="text2">Are you sure you want to delete this room details ?</div>
-    <button type="submit" class="btn">@foreach($inventory_keys as $inventoryss)<span><td><a  class ="textdec" href={{"DeleteInventoryData/".$inventoryss['id']}}>@endforeach Delete</a></td></span></button>
+    <button type="submit" class="btn">@foreach($Room_key as $rooms)<span><td><a  class ="textdec" href={{"DeleteInventoryData/".$rooms['ID']}}>@endforeach Delete</a></td></span></button>
     
     <button type="button" class="btncancel" onclick="closeForm()">Close</button>
     <button type="button" class="btncance3" onclick="closeForm()"><span class="btnpopuplogo1"></span></button>

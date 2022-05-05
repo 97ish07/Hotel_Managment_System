@@ -68,4 +68,13 @@ function AddRoom(Request $req ){
          $data->save();
          return redirect('view_Room');
     }
+
+    function DeleteRoomData($ID)
+    {
+
+        $data=rooms::find($ID);
+        $data->delete();
+        return redirect('Delete_Room');
+    }
+
 }

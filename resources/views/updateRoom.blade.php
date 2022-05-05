@@ -37,23 +37,23 @@
                              </select>
 
    <label class="l2" ><span>*</span> Room ID</label>
-   <div class="ItemName"><input type="text" name="roomID" value={{$update_key['roomID']}} class="texbox"></div></br><div class="error2"><span>@error('roomID'){{$message}}@enderror</span></div></br></br>
+   <div class="ItemName"><input type="text" name="roomID" value={{$update_key['RoomID']}} class="texbox"></div></br><div class="error2"><span>@error('roomID'){{$message}}@enderror</span></div></br></br>
 
 
     <label class="l3" ><span>*</span> Room Status</label>  
-   <div class="SupplireName"><input type="text" name="roomStatus" value={{$update_key['roomStatus']}} class="texbox"></div></br><div class="error3"><span>@error('roomStatus'){{$message}}@enderror</span></div></br></br>
+   <div class="SupplireName"><input type="text" name="roomStatus" value={{$update_key['RoomStatus']}} class="texbox"></div></br><div class="error3"><span>@error('roomStatus'){{$message}}@enderror</span></div></br></br>
 
   
     <label class="l4" ><span>*</span> Floor Number</label>     
-   <div class="UnitPrice"><input type="text" name="floorNumber" value={{$update_key['floorNumber']}} class="texbox"></div></br><div class="error4"><span>@error('floorNumber'){{$message}}@enderror</span></div></br></br>
+   <div class="UnitPrice"><input type="text" name="floorNumber" value={{$update_key['FloorNumber']}} class="texbox"></div></br><div class="error4"><span>@error('floorNumber'){{$message}}@enderror</span></div></br></br>
 
 
     <label class="l5" ><span>*</span> Price (Rs:)</label>           
-    <div class="Quantity"><input type="text" name="price" value={{$update_key['price']}} class="texbox"></div></br><div class="error5"><span>@error('price'){{$message}}@enderror</span></div></br></br>
+    <div class="Quantity"><input type="text" name="price" value={{$update_key['Price']}} class="texbox"></div></br><div class="error5"><span>@error('price'){{$message}}@enderror</span></div></br></br>
 
 
     <label class="l6" ><span>*</span> Description</label>                
-   <div class="Description"><input type="text" name="description" value={{$update_key['description']}} class="texbox"></div></br><div class="error6"><span>@error('description'){{$message}}@enderror</span></div></br></br>
+   <div class="Description"><input type="text" name="description" value={{$update_key['Description']}} class="texbox"></div></br><div class="error6"><span>@error('description'){{$message}}@enderror</span></div></br></br>
     
     <button  type="submit" class="submitbtn">Update</button><div id="app"></div>
 
