@@ -1,3 +1,5 @@
+   <link rel="stylesheet" href="/css/searchinventory.css" />
+
 <!DOCTYPE html>
 <html>
 
@@ -31,22 +33,22 @@
         <td>Price</td>
         <td>Room Status</td>
         <td>Description</td>
-        <td>Update</td>
         <td>Delete</td>
+        <td>Update</td>
 
     </tr>
-    @foreach($Room_key as $room)
+    @foreach($Room_key as $rooms)
 
     <tr lass="tablehead2">
-        <td>{{$room['ID']}}</td>
-         <td>{{$room['RoomID']}}</td>
-        <td>{{$room['FloorNumber']}}</td>
-        <td>{{$room['RoomType']}}</td>
-        <td>{{$room['Price']}}</td>
-        <td>{{$room['RoomStatus']}}</td>
-         <td>{{$room['Description']}}</td>
-        <td><a href={{"DeleteRoomData/".$room['ID']}}>Delete</a></td>
-        <td><a href={{"ShowUpdateRoomData/".$inventorys['ID']}}>Update</a></td>
+        <td>{{$rooms['ID']}}</td>
+         <td>{{$rooms['RoomID']}}</td>
+        <td>{{$rooms['FloorNumber']}}</td>
+        <td>{{$rooms['RoomType']}}</td>
+        <td>{{$rooms['Price']}}</td>
+        <td>{{$rooms['RoomStatus']}}</td>
+         <td>{{$rooms['Description']}}</td>
+        <td><a href={{"DeleteRoomData/".$rooms['ID']}}>Delete</a></td>
+        <td><a href={{"ShowUpdateRoomData/".$rooms['ID']}}>Update</a></td>
 
     </tr>
 

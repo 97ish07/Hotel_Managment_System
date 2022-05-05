@@ -39,6 +39,17 @@ function AddRoom(Request $req ){
         return redirect('Add_Room');
     }
 
+
+
+       function DeleteRoomData($ID)
+    {
+
+        $data=rooms::find($ID);
+        $data->delete();
+        return redirect('Delete_Room');
+    }
+
+
     function ShowUpdateRoomData($ID)
     {
         $data=rooms::find($ID);
@@ -69,32 +80,28 @@ function AddRoom(Request $req ){
          return redirect('view_Room');
     }
 
-    function DeleteRoomData($ID)
-    {
+      
+      public function eventsSearch(){
 
-        $data=rooms::find($ID);
-        $data->delete();
-        return redirect('Delete_Room');
-    }
-
-    function ShowRoomDataTest(){
-
-    $data =rooms::all();
-    return view('Delete_Room',['Room_keys'=>$data]);
-    return rooms::all();
-}
-
- public function eventsSearch(){
-
-        //search function 
+        
 
        $search_text = $_GET['query'];
        $Room_key = rooms::where('RoomID','Like', '%'.$search_text.'%')->orWhere('FloorNumber','Like', '%'.$search_text.'%')
         ->orWhere('RoomType','Like', '%'.$search_text.'%')->paginate(50);
 
-       return view('search_Room',compact('room_key'));
+       return view('search_Room',compact('Room_key'));
 
       
    }
+
+     function ShowRoomDataTest(){
+
+         $data =rooms::all();
+         return view('Delete_Room',['Room_keys' => $data]);
+         return rooms::all();
+     }
+   
+
+ 
 
 }
