@@ -11,7 +11,7 @@
 
 
 <div class="title">Hotle Diyatha</div>
-<!-- <img src="images\logo.jpg" alt="Italian Trulli" height="100" width="100"   style="position: absolute;  left:0px; box-shadow: 10px 5px 5px black;"> -->
+<img src="images\logo.jpg" alt="Italian Trulli" height="100" width="100"   style="position: absolute;  left:0px; box-shadow: 10px 5px 5px black;">
 
 <!-- <p>Using new Date(), creates a new date object with the current date and time:</p>
 <p id="demo">qqq</p> -->
