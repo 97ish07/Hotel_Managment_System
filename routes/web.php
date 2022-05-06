@@ -83,12 +83,12 @@ Route::view('Room_Dashboard','Room_Dashboard');
 
 //update room route
 Route::view('updateRoom','updateRoom');
-Route::get('updateRoom/{ID}',[RoomController::class,'ShowUpdateRoomData']);
+Route::get('updateRoom/{id}',[RoomController::class,'ShowUpdateRoomData']);
 Route::post('updateRoom',[RoomController::class,'UpdateRoomData']);
 
 //delete room route
 Route::view('Delete_Room','Delete_Room');
-Route::get('DeleteRoomData/{ID}',[RoomController::class,'DeleteRoomData']);
+Route::get('DeleteRoomData/{id}',[RoomController::class,'DeleteRoomData']);
 
 //search room route
 Route::get('/eventsSearch',[RoomController::class,'eventsSearch']);
