@@ -25,7 +25,7 @@
                  <a href="add_inventory" class="addinventorybtn"> Add Inventory</a>
                  <a href="view_inventory" class="viewinventorybtn" > View Inventory  </a> 
                  <a href="test" class="DeleteInventorybtn">Delete Inventory</a>
-                 <a href="view_inventory" class="Reportbtn" > Genarate Report  </a> 
+                 <a href="inventorypdf" class="Reportbtn" > Genarate Report  </a> 
                     
                     <div class="navigationbar">
                   

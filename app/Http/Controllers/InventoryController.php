@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\inventory;
 use Illuminate\Support\Facades\DB;
-use PDF;
+// use PDF;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 
 class InventoryController extends Controller
@@ -24,8 +25,8 @@ class InventoryController extends Controller
             'ItemType'=>'required',
             'ItemName'=>'required',
             'SupplireName'=>'required',
-            'UnitPrice'=>'required',
-            'Quantity'=>'required',
+            'UnitPrice'=>'required|numeric',
+            'Quantity'=>'required|numeric',
             'Description'=>'required'
         ]);
 
@@ -41,7 +42,9 @@ class InventoryController extends Controller
         $addinventory->Quantity=$req->Quantity;
         $addinventory->Description=$req->Description;
         $addinventory->save();
-        return redirect('add_inventory');
+        // return redirect('add_inventory');
+        return redirect()->back()->with('message', 'Inventory Details Added Successfully ');
+        
     }
 
     function DeleteInventoryData($id)
@@ -109,14 +112,18 @@ function ShowInventoryDataTest(){
     return inventory::all();
 }
 
-//pdf genrte
-// public function exportEventPDF(){
-//     $events = inventory::latest()->paginate(15);
-//     $pdf=PDF::loadview('events.indexpdf',compact('events'));
-//     return $pdf->download('Event-list.pdf');
 
-//     //generate pdf
-// }
+//genarate pdf 
+ function genaratePdf()
+ {
+
+    $data =inventory::all();
+    // $pdf = PDF::loadView('inventorypdf', $data);
+
+    $invpdf = PDF::loadview('inventorypdf',compact('data'));
+    return $invpdf->download('InventoryList.pdf');
+
+ }
 
 
 }

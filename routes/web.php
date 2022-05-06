@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InventoryController;
+use Dompdf\Dompdf;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -64,7 +65,8 @@ Route::view('test','test');
 // Route::get('test',[InventoryController::class,'ShowInventoryDatas']);
 Route::get('test',[InventoryController::class,'ShowInventoryDataTest']);
 
-//pdf genratee
+//pdf genrate
 
-Route::get('/nventorypdf',[EventController::class,'exportEventPDF']);
+Route::view('inventorypdf','inventorypdf');
+Route::get('inventorypdf',[InventoryController::class,'genaratePdf']);
 
