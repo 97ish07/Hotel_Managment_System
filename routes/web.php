@@ -92,3 +92,8 @@ Route::get('DeleteRoomData/{ID}',[RoomController::class,'DeleteRoomData']);
 
 //search room route
 Route::get('/eventsSearch',[RoomController::class,'eventsSearch']);
+
+
+
+//Route::view('Delete_Room','Delete_Room');
+//Route::get('ShowRoomDataTest/{ID}',[RoomController::class,'ShowRoomDataTest']);
