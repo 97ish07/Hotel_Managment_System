@@ -97,7 +97,7 @@ function AddRoom(Request $req ){
      function ShowRoomDataTest(){
 
          $data =rooms::all();
-         return view('Delete_Room',['Room_keys' => $data]);
+         return view('Delete_Room',['delete_key' => $data]);
          return rooms::all();
      }
    
