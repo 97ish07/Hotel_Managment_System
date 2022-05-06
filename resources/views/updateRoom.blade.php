@@ -24,7 +24,7 @@
    <form action="/updateRoom" method="POST" >
     @csrf 
     
-    <input type="hidden" name="ID" value={{$update_key['ID']}}></br></br></br>
+    <input type="hidden" name="ID" value={{$update_key['id']}}></br></br></br>
 
 <label class="l1" ><span>*</span> Room Type</label>    
 <select class="select" name="roomType" placeholder="Enter Room type">

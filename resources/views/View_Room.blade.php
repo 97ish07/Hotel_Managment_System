@@ -34,7 +34,7 @@
         </tr>
         @foreach($Room_key as $room)
         <tr class="tablehead2">
-        <td>{{$room['ID']}}</td>
+        <td>{{$room['id']}}</td>
         <td>{{$room['RoomID']}}</td>
         <td>{{$room['FloorNumber']}}</td>
         <td>{{$room['RoomType']}}</td>
@@ -43,7 +43,7 @@
         <td>{{$room['Description']}}</td>
 
         <td>
-            <a  href={{"updateRoom/".$room['ID']}}><div class="updte"></div></a>
+            <a  href={{"updateRoom/".$room['id']}}><div class="updte"></div></a>
 
         </td>
     </tr>
