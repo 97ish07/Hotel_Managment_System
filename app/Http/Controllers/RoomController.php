@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 class RoomController extends Controller
 {
-    function ShowRoomData(){
+   function ShowRoomData(){
 
         $data =rooms::all();
         return view('View_Room',['room_key'=>$data]);
@@ -71,8 +71,38 @@ class RoomController extends Controller
          $data->save();
          return redirect('View_Room');
     }
-   
 
- 
+
+    public function RoomSearch(){
+
+       
+
+       $search_text = $_GET['query'];
+       $room_key = rooms::where('RoomType','Like', '%'.$search_text.'%')->orWhere('RoomID','Like', '%'.$search_text.'%')
+        ->orWhere('RoomStatus','Like', '%'.$search_text.'%')->paginate(50);
+
+       return view('Search_Room',compact('room_key'));
+
+
+    }
+
+
+    function ShowRoomDataTest(){
+
+    $data =rooms::all();
+    return view('Delete_Room',['room_keys'=>$data]);
+    return rooms::all();
+}
+
+
+
+     function DeleteRoomData($id)
+    {
+
+        $data=rooms::find($id);
+        $data->delete();
+        return redirect('Delete_Room');
+    }
+
 
 }
