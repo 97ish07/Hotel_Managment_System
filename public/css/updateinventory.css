@@ -224,3 +224,26 @@
     background-color: aqua;
     color: black;
 }
+
+
+.susceessmg{
+    position: absolute;
+    top: 77px;
+    right: 0px;
+    height: 30px;
+    width: 760px;
+    background-color: rgba(169, 255, 205, 0.5);
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    color: rgb(0, 143, 36);
+    animation: hideAnimation 2s ease-in 2s;
+  animation-fill-mode: forwards;
+  
+}
+@keyframes hideAnimation {
+    to {
+      /* visibility: hidden; */
+      opacity: 0;
+      
+    }
+  }

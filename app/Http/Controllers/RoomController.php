@@ -69,7 +69,8 @@ class RoomController extends Controller
          $data->FloorNumber=$req->Floor_Number;
          $data->Description=$req->Descri_ption;
          $data->save();
-         return redirect('View_Room');
+         //return redirect('View_Room');
+         return redirect('View_Room')->with('message', 'Room Details Update Successfully ');
     }
 
 
