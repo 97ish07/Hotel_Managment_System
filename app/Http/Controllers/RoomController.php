@@ -101,7 +101,8 @@ class RoomController extends Controller
 
         $data=rooms::find($id);
         $data->delete();
-        return redirect('Delete_Room');
+        //return redirect('Delete_Room');
+        return redirect()->back()->with('message', 'Room was successfully deleted ');
     }
 
 
