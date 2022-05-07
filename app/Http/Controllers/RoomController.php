@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\rooms;
 use Illuminate\Support\Facades\DB;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class RoomController extends Controller
 {
@@ -105,6 +106,18 @@ class RoomController extends Controller
         //return redirect('Delete_Room');
         return redirect()->back()->with('message', 'Room was successfully deleted ');
     }
+
+
+    function genarateRoomPdf()
+ {
+
+    $data =rooms::all();
+    
+
+    $rmpdf = PDF::loadview('Roompdf',compact('data'));
+    return $rmpdf->download('InventoryList.pdf');
+
+ }
 
 
 }

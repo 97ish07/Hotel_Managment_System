@@ -87,3 +87,4 @@ Route::get('DeleteRoomData/{id}',[RoomController::class,'DeleteRoomData']);
 Route::get('Delete_Room',[RoomController::class,'ShowRoomDataTest']);
 
 
+//Route for generate report
