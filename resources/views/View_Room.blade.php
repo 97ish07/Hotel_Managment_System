@@ -1,57 +1,60 @@
+<!DOCTYPE html>
 <html>
+
 
 <head>
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/viewinventory.css" />
-
 </head>
 
-    <body>
+<body>
+
     <div class="background">
     <div class="version-tag">Version 1.1.0</div>
         <div class="viewindashboardback">
         <div class="titlelogoview"></div>       
         <div class="titleview">View Rooms</div>
             <div class="search">
-                <form class="search_inventory" type="get" action="{{ url('/eventSearch') }}">
+                <form class="search_inventory" type="get" action="{{ url('/RoomSearch') }}">
                     <input type="search" name="query" placeholder="Search.." class="searchbox">
                     <button type="submit" class="searchbtn"><i class="fa-search"></i> </button>
-                    </div>
+            </div>
             </form>
             </center>
             <div class="viewintable">
                 <table id="viewtable">
-    
-        <tr class="tablehead">
-        <td>Id</td>
-        <td>Room ID</td>
-        <td>Floor Number</td>
-        <td>Room Type</td>
-        <td>Price</td>
-        <td>Room Status</td>
-        <td>Description</td>
-        <td>Update</td>
-        </tr>
-        @foreach($Room_key as $room)
-        <tr class="tablehead2">
-        <td>{{$room['id']}}</td>
-        <td>{{$room['RoomID']}}</td>
-        <td>{{$room['FloorNumber']}}</td>
-        <td>{{$room['RoomType']}}</td>
-        <td>{{$room['Price']}}</td>
-        <td>{{$room['RoomStatus']}}</td>
-        <td>{{$room['Description']}}</td>
+                    <tr class="tablehead">
+                        <td>ID</td>
+                        <td>Room ID</td>
+                        <td>Room Type</td>
+                        <td>Room Status</td>
+                        <td>Room Price</td>
+                        <td>Floor Number</td>
+                        <td>Description</td>
+                        <td>Update</td>
 
-        <td>
-            <a  href={{"updateRoom/".$room['id']}}><div class="updte"></div></a>
+                    </tr>
+                    @foreach($room_key as $rooms)
 
-        </td>
-    </tr>
-      @endforeach
-    </table>
-    
-    </div>
+                    <tr class="tablehead2">
+                        <td>{{$rooms['id']}}</td>
+                        <td>{{$rooms['RoomID']}}</td>
+                        <td>{{$rooms['RoomType']}}</td>
+                        <td>{{$rooms['RoomStatus']}}</td>
+                        <td>{{$rooms['Price']}}</td>
+                        <td>{{$rooms['FloorNumber']}}</td>
+                        <td>{{$rooms['Description']}}</td>
+                        <td><a  href={{"Update_Room/".$rooms['id']}}><div class="updte"></div></a></td>
+
+                    </tr>
+
+                    @endforeach
+
+
+                </table>
+            </div>
         </div>
+
 
         <div class="navigationbar">
 
@@ -88,6 +91,8 @@
         </div>
 
     </div>
+    
 
-    </body>
-    </html>
+</body>
+
+</html>
