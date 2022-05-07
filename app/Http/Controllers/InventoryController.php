@@ -52,7 +52,8 @@ class InventoryController extends Controller
 
         $data=inventory::find($id);
         $data->delete();
-        return redirect('test');
+        // return redirect('test');
+        return redirect()->back()->with('message', 'Inventory Details Delete Successfully ');
     }
 
     function ShowUpdateInventoryData($id)
@@ -82,7 +83,8 @@ class InventoryController extends Controller
          $data->Quantity=$req->Quantity;
          $data->Description=$req->Description;
          $data->save();
-         return redirect('view_inventory');
+        //  return redirect('view_inventory');
+         return redirect('view_inventory')->with('message', 'Inventory Details Update Successfully ');
     }
 
    // public function DbOperation()

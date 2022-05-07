@@ -15,6 +15,15 @@
         <div class="viewindashboardback">
         <div class="titlelogoview"></div>       
         <div class="titleview">Delete Inventory</div>
+
+
+        @if(session()->has('message'))
+    <div class="susceessmg">
+        {{ session()->get('message') }}
+    </div>
+@endif
+
+
         <div class="search">
                 <form class="search_inventory" type="get" action="{{ url('/eventSearch') }}">
                     <input type="search" name="query" placeholder="Search.." class="searchbox">
@@ -67,7 +76,7 @@
                         <td>{{$inventoryss['Description']}}</td>
                         
                         <!-- <td><a href={{"ShowUpdateInventoryData/".$inventoryss['id']}}>Update</a></td> -->
-                        <td><button  onclick="openForm()">delete</button></td>
+                        <td><button class="dltbtn" onclick="openForm()"><div class="delete"></div></button></td>
             
                     </tr>
 

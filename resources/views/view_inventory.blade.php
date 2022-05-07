@@ -14,6 +14,14 @@
         <div class="viewindashboardback">
         <div class="titlelogoview"></div>       
         <div class="titleview">View Inventory</div>
+
+        @if(session()->has('message'))
+    <div class="susceessmg">
+        {{ session()->get('message') }}
+    </div>
+@endif
+
+
             <div class="search">
                 <form class="search_inventory" type="get" action="{{ url('/eventSearch') }}">
                     <input type="search" name="query" placeholder="Search.." class="searchbox">

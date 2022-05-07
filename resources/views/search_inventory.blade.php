@@ -58,8 +58,8 @@
         <td>{{$inventorys['Unit_Price']}}</td>
         <td>{{$inventorys['Quantity']}}</td>
         <td>{{$inventorys['Description']}}</td>
-        <td><a href={{"DeleteInventoryData/".$inventorys['id']}}>Delete</a></td>
-        <td><a href={{"ShowUpdateInventoryData/".$inventorys['id']}}>Update</a></td>
+        <td><a href={{"DeleteInventoryData/".$inventorys['id']}}><div class="delete"></div></a></td>
+        <td><a href={{"update_inventory/".$inventorys['id']}}><div class="updte"></div></a></td>
 
     </tr>
 
