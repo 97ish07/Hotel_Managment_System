@@ -5,13 +5,10 @@
     <head>
          <link rel="stylesheet" href="/css/main.css"/>
          <link rel="stylesheet" href="/css/addinventory.css"/>
-      
-
+        
     </head>
 
     <body >
-         
-    
     <div id="app">
        
     <span id="error_message" class="text-danger"></span>  
@@ -22,36 +19,49 @@
                 <div class="formbackground">
                   <div class="title">Add Room</div>
                   <div class="addlogo"></div>
-                    <form  onsubmit="myFunction()" action="Add_Room" method="POST" id="submit_form" >
+
+                  
+                  @if(session()->has('message'))
+    <div class="susceessmg">
+        {{ session()->get('message') }}
+    </div>
+@endif
+                    <form action="Add_Room" method="POST" id="submit_form" >
                             @csrf 
                             <label class="l1" ><span>*</span> Room Type</label>
-                             <select class="select" name="roomType" placeholder="Enter Item type">
+                             <select class="select" name="Room_Type" placeholder="Select Room type">
                                <option selected>Select Room Type</option>
                                 <option value="Single Room">Single Room</option>
                                 <option value="Double Room">Double Room</option>
-                                <option value="Tripple Room">Triple Room</option>
+                                <option value="Triple Room">Triple Room</option>
+                                <option value="Quad Room">Quad Room</option>
+                                <option value="King Room">King Room</option>
                              </select>
-                              <div class="error1">
-                             <span>@error('roomType'){{$message}}@enderror</span>
-                             </div>
+                             <span>@error('Room_Type'){{$message}}@enderror</span>
                      <label class="l2" ><span>*</span> Room ID</label>
-                     
-                     <div class="ItemName"><input type="text" name="roomID" placeholder="Enter Room ID" class="texbox"></div></br><div class="error2"><span>@error('roomID'){{$message}}@enderror</span></div></br></br>
+                     <div class="ItemName"><input type="text" name="Room_ID" placeholder="Enter Room ID" class="texbox"></div></br><div class="error2"><span>@error('Room_ID'){{$message}}@enderror</span></div></br></br>
                      <label class="l3" ><span>*</span> Room Status</label>  
-                     <div class="SupplireName"><input type="text" name="roomStatus" placeholder="Enter Room Status" class="texbox"></div></br><div class="error3"><span>@error('roomStatus'){{$message}}@enderror</span></div></br></br>
-                     <label class="l4" ><span>*</span> Floor Number</label>     
-                     <div class="UnitPrice"><input type="text"  name="floorNumber" placeholder="Enter Floor Number" class="texbox"></div></br><div class="error4"><span>@error('floorNumber'){{$message}}@enderror</span></div></br></br>
-                     <label class="l5" ><span>*</span> Price (Rs:)</label>           
-                     <div class="Quantity"><input type="text" name="price" placeholder="Enter Price" class="texbox"></div></br><div class="error5"><span>@error('price'){{$message}}@enderror</span></div></br></br>
+                     <div class="SupplireName"><input  type="text" name="Room_Status" placeholder="Enter Room Status" class="texbox"></div></br><div class="error3" ><span>@error('Room_Status'){{$message}}@enderror</span></div></br></br>
+                     <label class="l4" ><span>*</span> Room Price</label>     
+                     <div class="UnitPrice"><input id="numb" type="text" name="Pri_ce" placeholder="Enter Room Price(Rs)" class="texbox"></div></br><div class="error4"><span>@error('Pri_ce'){{$message}}@enderror</span></div></br></br>
+                     <p id="demo"></p>
+                     <label class="l5" ><span>*</span> Floor Number</label>           
+                     <div class="Quantity"><input type="text" name="Floor_Number" placeholder="Enter Floor Number" class="texbox"></div></br><div class="error5"><span>@error('Floor_Number'){{$message}}@enderror</span></div></br></br>
                      <label class="l6" ><span>*</span> Description</label>                
-                     <div class="Description"><input type="text" name="description" placeholder="Enter Description" class="texbox"></div></br><div class="error6"><span>@error('description'){{$message}}@enderror</span></div></br></br>
-                      <button  type="submit" class="submitbtn">submit</button><div id="app">
+                     <div class="Description"><input type="text" name="Descri_ption" placeholder="Enter Description" class="texbox"></div></br><div class="error6"><span>@error('Descri_ption'){{$message}}@enderror</span></div></br></br>
+                      <button onsubmit="myFunction()" type="submit" class="submitbtn"> Submit</button><div id="app">
         
     </div>
                       
                       
-                      <button type="#" class="clearbtn">Cancel</button>
+                      <button type="reset" value="Reset" class="clearbtn">Clear</button>
 </form>
+
+
+
+
+
+
 
                 </div>
                 <div class="navigationbar">
@@ -66,8 +76,23 @@
 
                 </div>
         </div>
- 
-              
+      
+
+
+        <script>
+function myFunction() {
+  // Get the value of the input field with id="numb"
+  let x = document.getElementById("numb").value;
+  // If x is Not a Number or less than one or greater than 10
+  let text;
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
         
     </body>
 
