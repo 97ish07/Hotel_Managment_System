@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\rooms;
 use Illuminate\Support\Facades\DB;
-use Barryvdh\DomPDF\Facade\Pdf;
+//use Barryvdh\DomPDF\Facade\Pdf;
 
 class RoomController extends Controller
 {
@@ -108,16 +108,16 @@ class RoomController extends Controller
     }
 
 
-    function genarateRoomPdf()
- {
+   // function genarateRoomPdf()
+ //{
 
-    $data =rooms::all();
+    //$data =rooms::all();
     
 
-    $rmpdf = PDF::loadview('Roompdf',compact('data'));
-    return $rmpdf->download('InventoryList.pdf');
+   // $rmpdf = PDF::loadview('Roompdf',compact('data'));
+    //return $rmpdf->download('InventoryList.pdf');
 
- }
+ //}
 
 
 }

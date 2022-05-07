@@ -88,3 +88,5 @@ Route::get('Delete_Room',[RoomController::class,'ShowRoomDataTest']);
 
 
 //Route for generate report
+Route::view('Roompdf','Roompdf');
+Route::get('Roompdf',[RoomController::class,'genarateRoomPdf']);
