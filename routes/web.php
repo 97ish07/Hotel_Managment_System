@@ -13,36 +13,12 @@ use App\Http\Controllers\RoomController;
 |
 */
 
-Route::get('/', function () {
-    return view('Room_Dashboard');
-});
+//------------------------------------Common Routs-------------------------------------------------------------------------
 
 
 
-// Route::get('/', function () {
-//     return view('inventory_page');
-// });
-//show inventory data
-Route::view('view_inventory','view_inventory');
-Route::get('view_inventory',[InventoryController::class,'ShowInventoryData']);
 
-//add inventory route
-Route::view('add_inventory','add_inventory');
-Route::post('add_inventory',[InventoryController::class,'AddInventoryData']);
 
-//Delete inventory route
-
-Route::get('DeleteInventoryData/{id}',[InventoryController::class,'DeleteInventoryData']);
-
-//update inventory route
-
-Route::get('ShowUpdateInventoryData/{id}',[InventoryController::class,'ShowUpdateInventoryData']);
-Route::post('update_inventory',[InventoryController::class,'UpdateInventoryData']);
-
-//search
-Route::get('/eventSearch',[InventoryController::class,'eventSearch']);
-
-//Route::any('/search',[InventoryController::class,'Search']);
 
 //Auth::routes();
 
@@ -55,8 +31,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //navigate to dashboad clicking home button or logo
 Route::view('dashboard','dashboard');
 
-//rout navgationbar(navigate to inventorya page)
-Route::view('inventory_page','inventory_page');
 //Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -65,35 +39,51 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//Route::view('test','test');
-Route::view('test','test');
-// Route::get('test',[InventoryController::class,'ShowInventoryDatas']);
-Route::get('test',[InventoryController::class,'ShowInventoryDataTest']);
-
-//add room route
-Route::view('Add_Room','Add_Room');
-Route::post('Add_Room',[RoomController::class,'AddRoom']);
 
 
-//route for room list
-Route::get('View_Room',[RoomController::class,'ShowRoomData']);
+
+
+
+
+
+//------------------- ----------------Room Managment Routes--------------------------------------------------------
+
+
+
+
+//Route for room dashboard
+
+
+Route::get('/', function () {
+    return view('Room_Dashboard');
+});
+
 
 Route::view('Room_Dashboard','Room_Dashboard');
 
 
-//update room route
-Route::view('updateRoom','updateRoom');
-Route::get('updateRoom/{id}',[RoomController::class,'ShowUpdateRoomData']);
-Route::post('updateRoom',[RoomController::class,'UpdateRoomData']);
 
-//delete room route
+//route for add new room
+Route::view('Add_Room','Add_Room');
+Route::post('Add_Room',[RoomController::class,'AddRoomData']);
+
+
+//route for view rooms
+Route::view('view_Room','view_Room');
+Route::get('View_Room',[RoomController::class,'ShowRoomData']);
+
+//route for update room
+Route::view('Update_Room','Update_Room');
+Route::get('Update_Room/{id}',[RoomController::class,'ShowUpdateRoomData']);
+Route::post('Update_Room',[RoomController::class,'UpdateRoomData']);
+
+
+//route for search room
+Route::get('/RoomSearch',[RoomController::class,'RoomSearch']);
+
+//Route for delete room
 Route::view('Delete_Room','Delete_Room');
 Route::get('DeleteRoomData/{id}',[RoomController::class,'DeleteRoomData']);
-
-//search room route
-Route::get('/eventsSearch',[RoomController::class,'eventsSearch']);
+Route::get('Delete_Room',[RoomController::class,'ShowRoomDataTest']);
 
 
-
-//Route::view('Delete_Room','Delete_Room');
-//Route::get('ShowRoomDataTest/{ID}',[RoomController::class,'ShowRoomDataTest']);
