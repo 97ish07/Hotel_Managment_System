@@ -87,3 +87,16 @@ Route::get('DeleteRoomData/{id}',[RoomController::class,'DeleteRoomData']);
 Route::get('Delete_Room',[RoomController::class,'ShowRoomDataTest']);
 
 
+//------------------- ----------------Customer Booking Routes--------------------------------------------------------
+
+Route::get('roomindex',[indexController::class,'viewlist']);
+Route::view('create','addnew');
+Route::post('create',[createfunc::class,'getData']);
+
+Route::view("edit",'editbookings');
+Route::get('editlist/{id}',[indexController::class,'showData']);
+Route::post('editlist',[indexController::class,'update']);
+
+Route::get('deletelist/{id}',[indexController::class,'delete']);
+
+Route::get('bookPdf',[indexController::class,'exportBookPDF']);
