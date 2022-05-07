@@ -8,98 +8,69 @@ use Illuminate\Support\Facades\DB;
 
 class RoomController extends Controller
 {
-     function ShowRoomData(){
+    function ShowRoomData(){
 
         $data =rooms::all();
-        return view('View_Room',['Room_key'=>$data]);
+        return view('View_Room',['room_key'=>$data]);
      }
 
-function AddRoom(Request $req ){
+     function AddRoomData(Request $req ){
 
-         $req->validate([
-            //'ItemId'=>'required',
-            'roomID'=>'required',
-            'floorNumber'=>'required',
-            'roomType'=>'required',
-            'price'=>'required',
-            'roomStatus'=>'required',
-             'description'=>'required'
+        $req->validate([
+            'Room_Type'=>'required',
+            'Room_ID'=>'required',
+            'Room_Status'=>'required',
+            'Pri_ce'=>'required|numeric',
+            'Floor_Number'=>'required|numeric',
+            'Descri_ption'=>'required'
         ]);
+
+    
 
         $addroom= new rooms;
 
-      
-        $addroom->RoomID=$req->roomID;
-        $addroom->FloorNumber=$req->floorNumber;
-        $addroom->RoomType=$req->roomType;
-        $addroom->Price=$req->price;
-        $addroom->RoomStatus=$req->roomStatus;
-        $addroom->Description=$req->description;
+       
+        $addroom->RoomType=$req->Room_Type;
+        $addroom->RoomID=$req->Room_ID;
+        $addroom->RoomStatus=$req->Room_Status;
+        $addroom->Price=$req->Pri_ce;
+        $addroom->FloorNumber=$req->Floor_Number;
+        $addroom->Description=$req->Descri_ption;
         $addroom->save();
-        return redirect('Add_Room');
+        return redirect()->back()->with('message', 'New Room Added Successfully ');
+        
     }
 
 
 
-       function DeleteRoomData($ID)
+    function ShowUpdateRoomData($id)
     {
-
-        $data=rooms::find($ID);
-        $data->delete();
-        return redirect('Delete_Room');
-    }
-
-
-    function ShowUpdateRoomData($ID)
-    {
-        $data=rooms::find($ID);
-        return view('updateRoom',['update_key'=>$data]);
+        $data=rooms::find($id);
+        return view('Update_Room',['update_key'=>$data]);
     }
 
     function UpdateRoomData(Request $req)
     {
 
         $req->validate([
-            //'ItemId'=>'required',
-            'roomID'=>'required',
-            'floorNumber'=>'required',
-            'roomType'=>'required',
-            'price'=>'required',
-            'roomStatus'=>'required',
-            'description'=>'required'
+            'Room_Type'=>'required',
+            'Room_ID'=>'required',
+            'Room_Status'=>'required',
+            'Pri_ce'=>'required|numeric',
+            'Floor_Number'=>'required|numeric',
+            'Descri_ption'=>'required'
         ]);
 
-         $data=rooms::find($req->ID);
-         $data->RoomID=$req->roomID;
-         $data->FloorNumber=$req->floorNumber;
-         $data->RoomType=$req->roomType;
-         $data->Price=$req->price;
-         $data->RoomStatus=$req->roomStatus;
-         $data->Description=$req->description;
+         $data=rooms::find($req->id);
+         $data->RoomType=$req->Room_Type;
+         $data->RoomID=$req->Room_ID;
+         $data->RoomStatus=$req->Room_Status;
+         $data->Price=$req->Pri_ce;
+         $data->FloorNumber=$req->Floor_Number;
+         $data->Description=$req->Descri_ption;
          $data->save();
-         return redirect('view_Room');
+         return redirect('View_Room');
     }
-
-      
-      public function eventsSearch(){
-
-        
-
-       $search_text = $_GET['query'];
-       $Room_key = rooms::where('RoomID','Like', '%'.$search_text.'%')->orWhere('FloorNumber','Like', '%'.$search_text.'%')
-        ->orWhere('RoomType','Like', '%'.$search_text.'%')->paginate(50);
-
-       return view('search_Room',compact('Room_key'));
-
-      
-   }
-
-     function ShowRoomDataTest(){
-
-         $data =rooms::all();
-         return view('Delete_Room',['delete_key' => $data]);
-         return rooms::all();
-     }
    
 
  
