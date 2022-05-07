@@ -70,8 +70,8 @@ class InventoryController extends Controller
             'ItemType'=>'required',
             'ItemName'=>'required',
             'SupplireName'=>'required',
-            'UnitPrice'=>'required',
-            'Quantity'=>'required',
+            'UnitPrice'=>'required|numeric',
+            'Quantity'=>'required|numeric',
             'Description'=>'required'
         ]);
 
