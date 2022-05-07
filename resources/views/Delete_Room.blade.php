@@ -15,6 +15,15 @@
         <div class="viewindashboardback">
         <div class="titlelogoview"></div>       
         <div class="titleview">Delete Room</div>
+
+         @if(session()->has('message'))
+    <div class="susceessmg">
+        {{ session()->get('message') }}
+    </div>
+@endif
+
+
+
         <div class="search">
                 <form class="Search_Room" type="get" action="{{ url('/RoomSearch') }}">
                     <input type="search" name="query" placeholder="Search.." class="searchbox">
