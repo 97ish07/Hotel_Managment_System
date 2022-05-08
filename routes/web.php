@@ -65,7 +65,7 @@ Route::view('test','test');
 // Route::get('test',[InventoryController::class,'ShowInventoryDatas']);
 Route::get('test',[InventoryController::class,'ShowInventoryDataTest']);
 
-//pdf genrate
+//pdf  report genarategenrate
 
 Route::view('inventorypdf','inventorypdf');
 Route::get('inventorypdf',[InventoryController::class,'genaratePdf']);
