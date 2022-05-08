@@ -1,11 +1,13 @@
 .viewindashboardback {
   background-position: center;
+
   height: 675px;
   width: 1300px;
   background-color: rgb(255, 255, 255);
   position: absolute;
     top: 50px;
     left: 114px;
+
   border-radius: 20px;
   opacity: 1;
   border-color: rgb(171, 173, 173);
@@ -19,6 +21,7 @@
     height: 400px;
     width: 950px;
     position: absolute;
+
     top: 220px;
     left: 310px;
     overflow-y: scroll;
@@ -85,14 +88,18 @@
       position: absolute;
       height: 40px;
       width: 500px;
+
       top: 160px;
+
       left: 900px;
     }
     .searchbox{
      
       height: 35px;
       width: 360px;
+
       border-color: rgb(62, 206, 241);
+
       border-radius: 8px;
       border-style: groove;
       color: #752c2c;
@@ -101,7 +108,9 @@
     .searchbtn{
       position: absolute;
       top: 5px;
+
       left: 326px;
+
       height: 34px;
       width: 34px;
       
@@ -116,7 +125,9 @@
       background-size: 25px 25px;
       background-repeat: no-repeat;
       filter:drop-shadow(89);
+
       cursor: pointer;
+
       
       
     }
@@ -139,13 +150,17 @@
       color: #202020;
     }
     .updte{
+
       background-image: url("../images/updteinventrytablelogo.png");
+
       height: 25px;
       width: 25px;
       background-size: 25px 25px;
       background-repeat: no-repeat;
+
       margin: 0px 20px 0px 25px;
     
+
       /* text-align: center; */
      
       
@@ -173,6 +188,7 @@
         
       }
     }
+
   
 
 
@@ -188,3 +204,4 @@
       top: 20px;
       left: 62px;
   } */
+

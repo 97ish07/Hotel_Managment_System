@@ -14,7 +14,9 @@
 <body>
 
     <div class="background">
+
     <div class="version-tag">Version 1.2.0</div>
+
         <div class="dashboardback">  </div>
 
       
@@ -27,7 +29,11 @@
                     <div class="RoomBookinglogo1"></div><div class="bk"> Booking</div>
                 </div>
             </a>
+
+            <a href="Room_Dashboard">
+
             <a href="#">
+
                 <div class="RoomManagementbtn">
                     <div class="RoomManagementlogo1"></div><div class="bk1">Room Management</div>
                 </div>
@@ -51,8 +57,10 @@
 </html>
 
 
+
             </div>
         <div class="clndrdiv">
+
 
         <body onload="startTime()">
   <div class="container">
@@ -154,7 +162,7 @@
                     <div class="RoomBookinglogo"></div>Room Booking
                 </div>
             </a>
-            <a href="#">
+            <a href="Room_Dashboard">
                 <div class="RoomManagement">
                     <div class="RoomManagementlogo"></div>Room Management
                 </div>

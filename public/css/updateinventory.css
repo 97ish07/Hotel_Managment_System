@@ -155,7 +155,9 @@
     background-color: rgb(230, 135, 27);
     font-size: large;
     border-color:rgb(238, 145, 24);
+
     cursor: pointer;
+
 }
 .submitbtn:hover{
     background-color: rgba(216, 72, 6, 0.747);
@@ -226,6 +228,29 @@
     color: black;
 }
 
+
+
+.susceessmg{
+    position: absolute;
+    top: 77px;
+    right: 0px;
+    height: 30px;
+    width: 760px;
+    background-color: rgba(169, 255, 205, 0.5);
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    color: rgb(0, 143, 36);
+    animation: hideAnimation 2s ease-in 2s;
+  animation-fill-mode: forwards;
+  
+}
+@keyframes hideAnimation {
+    to {
+      /* visibility: hidden; */
+      opacity: 0;
+      
+    }
+
 .backbtn{
     background-image: url("../images/inventory_search_back_btn.png");
     height: 25px;
@@ -236,6 +261,8 @@
     position: absolute;
     top: -40px;
     left: -100px;
+
     /* border-style: groossse;
     border-color; */
+
   }

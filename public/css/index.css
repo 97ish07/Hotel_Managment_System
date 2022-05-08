@@ -1,0 +1,288 @@
+body{
+    margin: 0px 0px 0px 0px;
+    min-height: 100%;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input{
+    outline: none;
+    border: 1px solid rgb(87, 86, 86);
+    border-radius: 6px;
+    font-size: 22px;
+    padding: 4px 6px;
+    min-width: 360px;
+    background-color: transparent;
+
+}
+.form-group{
+    display: flex;
+    align-items: center;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td{
+    padding: 10px 12px;
+}
+
+.table-wrapper{
+    padding: 20px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.search-wrapper{
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+
+}
+
+.title{
+    flex-grow: 1;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.row-color{
+    background-color: #81d6e7;
+}
+
+.card{
+    padding: 20px ;
+    opacity: 1;
+    border: none;
+    background-color: white;
+    width: fit-content;
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.label{
+    width: 200px;
+}
+
+button {
+        border: none;
+        border-radius: 6px;
+        padding: 6px 10px;
+        font-size: 1.1em;
+        opacity: 1;
+        color: rgb(255, 255, 255);
+        background-blend-mode: unset;
+        cursor: pointer;
+      }
+
+      .btn-primary {
+        background-color: rgb(86, 168, 223);
+      }
+
+      .btn-danger {
+        background-color: rgb(151, 0, 58);
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      button:active {
+        opacity: 0.9;
+      }
+
+.background{
+    
+    background-image: url("../images/main_image.jpg"); 
+    height: 100vh;
+    width: 100%;
+    background-size:100%  100%;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+.bg-img{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    display:flex;
+    flex-direction: row;
+    padding: 30px;
+    height: 94vh;
+    width: 94vw;
+}
+
+.dashboardback{
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 0px 20px 20px 0px;
+    border-color: rgb(171, 173, 173);
+    border-style: solid;
+    border-width: 0px;
+
+}
+
+.navigationbar{
+    height: 100%;
+    width: 360px;
+    background-image: linear-gradient(#8BD7DC,#1c6c7c);
+    border-radius: 20px 0px 0px 19px;
+    opacity:1px;
+      
+}
+
+.flex-row{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: white;
+    padding: 16px 22px;
+    gap: 14px;
+    border-top: 1px solid #81d6e7;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+}
+
+.border-bottom{
+    border-bottom: 1px solid #81d6e7;
+}
+
+.homelogo{
+    
+    background-image: url("../images/homeicon.png");
+    height: 24px;
+    width: 24px;
+    background-size:24px  24px;
+    background-repeat: no-repeat;
+    position: relative;
+    filter:  brightness(0) invert(1);
+    
+   
+    
+}
+.RoomBookinglogo{
+    
+    background-image: url("../images/bookingicon.png");
+    height: 24px;
+    width: 24px;
+    background-size:24px  24px;
+    background-repeat: no-repeat;
+    position: relative;
+    filter:  brightness(0) invert(1);
+   
+    
+}
+.RoomManagementlogo{
+    
+    background-image: url("../images/roomManagementLogo.png");
+    height: 24px;
+    width: 24px;
+    background-size:24px  24px;
+    background-repeat: no-repeat;
+    position: relative;
+    filter:  brightness(0) invert(1);
+    
+    
+}
+.Dininglogo{
+    
+    background-image: url("../images/DiningLogo.png");
+    height: 24px;
+    width: 24px;
+    background-size:24px  24px;
+    background-repeat: no-repeat;
+    position: relative;
+    filter:  brightness(0) invert(1);
+    
+    
+}
+.Inventorylogo{
+    
+    background-image: url("../images/InventoryLogo.png");
+    height: 24px;
+    width: 24px;
+    background-size:24px  24px;
+    background-repeat: no-repeat;
+    position: relative;
+    filter:  brightness(0) invert(1);
+    
+    
+}
+.logo-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.logo{
+    
+    background-image: url("../images/logo.jpg");
+    height: 100px;
+    width: 96px;
+    background-size:100px  100px;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    border-color: black;
+    border-width: 3px;
+}
+
+
+
+
+.flex-row:hover {
+    background-color: #178399; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+    border-color: transparent;
+  }
+.RoomBooking:hover {
+    background-color: #178399; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+    border-color: transparent;
+    
+  }
+.RoomManagement:hover {
+    background-color: #178399; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+    border-color: transparent;
+  }
+.Dining:hover {
+    background-color: #178399; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+    border-color: transparent;
+  }
+.Inventory:hover {
+    background-color: #178399; /* Green */
+    color: white;
+    border-width: .6px 0px 0px 0px;
+    border-style: solid;
+    border-color: transparent;
+  }

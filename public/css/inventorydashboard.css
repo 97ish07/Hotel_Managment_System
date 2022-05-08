@@ -1,6 +1,7 @@
 
 .invdashboardback {
   background-position: center;
+
   height: 675px;
     width: 1300px;
     top: 50px;
@@ -9,6 +10,7 @@
   position: absolute;
   position: absolute;
   
+
   border-radius: 20px;
   opacity: 0.7;
   border-color: rgb(171, 173, 173);
@@ -145,3 +147,17 @@
   top: 96px;
   left: 480px;
 }
+
+
+.rmlogo{
+  background-image: url("../images/roomManagementLogo.png");
+  height: 450px;
+  width: 45px;
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+ 
+  position: absolute;
+  top: 96px;
+  left: 480px;
+}
+

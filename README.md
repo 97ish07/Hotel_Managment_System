@@ -1,65 +1,75 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Hotel Management System for Hotel Diyatha
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+![logo](https://user-images.githubusercontent.com/81189012/167286914-3a362d02-a00a-4f5a-9eb4-3d929c4a250c.jpg)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# About the Project
+We were developed an administrator-based web application for the hotel "Diyatha", a fictitious hotel. 
+There, we are mainly focusing on the most common problems that can be seen in a hotel management 
+system, such as
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+• Physical space consuming
 
-## Learning Laravel
+• Much time consuming
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+• Difficulty to find records
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+• Difficult to analyzed records
 
-## Laravel Sponsors
+• Require lot of labor effort 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+• Lack of security 
 
-### Premium Partners
+• Lack of permanence of records 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+The hotel management system that we implemented will provide solutions to all the 
+problems that are mentioned above. And it will be with extra functions that would not be possible with 
+manual procedures. All the hotel information will be stored in a database, including room information, 
+inventory, restaurant information, and room bookings. This enables fast and easy retrieval of records, 
+which will take only seconds. By using this system, data entry will be more reliable and accurate, and 
+report generation will be so easy that the manager does not even worry about them. The system will 
+generate reports automatically and display them in a user-friendly manner. By using this system, data 
+redundancy will be completely avoided. Another major advantage of using this system is data privacy 
+and security. Data can be accessed by only authorized people, and only managers can take database 
+backups, restore, or remove it. The newly introduced web application system, Hotel Management 
+System for Hotel "Diyatha", will automate the major operations of the hotel. This system will be able 
+to handle many services and take care of the admins in a quick manner. As a solution to the large 
+amount of file handling happening at the hotel, this system will be used to overcome those drawbacks. 
+The managers can access the system functionalities with limited restrictions. The responsible managers 
+are: room manager, inventory manager, room booking manager, and restaurant manager. The main 
+functions of the system are:
 
-## Contributing
+• Manage all room types and room services
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+• Manage the hotel's inventory.
 
-## Code of Conduct
+• Manage food orders and menu information.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+• Manage Room Reservation
 
-## Security Vulnerabilities
+This system will be user-appropriate, easy to use, and provide easy recovery and end-user high 
+satisfaction.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Tools and Technologies used
+• framework - Laravel version 8
 
-## License
+• DBMS - phpmyadmin
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# Hotel_Managment_System
+# Acknowledgment
+
+![logo](https://user-images.githubusercontent.com/81189012/167288139-52b06a16-7323-4064-b420-d68271a113ee.png)
+
+This is a group project done for ITPM module in 3rd year, SLIIT
+
+*Contributors
+
+• IT19984674 - K.M.I.S Wanninayake
+
+• IT19985350 - T.V. Rathnahewage
+
+• IT199752914 - L.G.S.W. Bambaranda
+
+• IT19987026 - A.M.V.A. Abeysinghe
+
+
