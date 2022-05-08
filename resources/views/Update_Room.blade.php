@@ -22,12 +22,6 @@
                   <div class="addlogo"></div>
 
 
-                   @if(session()->has('message'))
-    <div class="susceessmg">
-        {{ session()->get('message') }}
-    </div>
-@endif
-
                 
    <form action="/Update_Room" method="POST" >
     @csrf 
