@@ -1,5 +1,6 @@
 .invdashboardback {
     background-position: center;
+
     height: 87vh; /* Screen height */
     width: 85vw; /* Screen width */
     background-size: 85vw 87vh;
@@ -8,6 +9,7 @@
     top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+  
     border-radius: 20px;
     opacity: .5;
     border-color: rgb(171, 173, 173);
@@ -185,6 +187,14 @@
     top: 32px;
     left: 120px;
 }
+
+.error1{
+
+    position:absolute;
+    right: 402px;
+    top: 305px;
+    color: red;
+}
 .error2{
 
     position:absolute;
@@ -248,3 +258,4 @@
       
     }
   }
+
