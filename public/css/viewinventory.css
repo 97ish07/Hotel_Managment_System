@@ -155,14 +155,14 @@
     
     .susceessmg{
       position: absolute;
-      top: 77px;
+      top: 100px;
       right: 0px;
       height: 30px;
-      width: 760px;
-      background-color: rgba(169, 255, 205, 0.5);
+      width: 1060px;
+      background-color: rgba(148, 255, 255, 0.507);
       text-align: center;
       padding: 10px 0px 0px 0px;
-      color: rgb(0, 143, 36);
+      color: rgb(3, 156, 156);
       animation: hideAnimation 2s ease-in 2s;
     animation-fill-mode: forwards;
     
@@ -174,3 +174,4 @@
         
       }
     }
+  
