@@ -52,11 +52,14 @@ This system will be user-appropriate, easy to use, and provide easy recovery and
 satisfaction.
 
 # Tools and Technologies used
+• framework - Laravel version 8
+
+• DBMS - phpmyadmin
 
 # Acknowledgment
 
-              
+![logo](https://user-images.githubusercontent.com/81189012/167288139-52b06a16-7323-4064-b420-d68271a113ee.png)
+
+This is a group project done for ITPM module in 3rd year, SLII
 
 
-                  ![logo](https://user-images.githubusercontent.com/81189012/167287929-9e2ce326-1193-4f11-868d-0716c68e6e0b.png)
-                  This is a group project done for ITPM module in 3rd year, SLIIT
