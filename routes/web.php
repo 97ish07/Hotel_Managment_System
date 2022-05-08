@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoomController;
+use App\Http\Controllers\indexController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -90,3 +91,16 @@ Route::get('Delete_Room',[RoomController::class,'ShowRoomDataTest']);
 //Route for generate report
 Route::view('Roompdf','Roompdf');
 Route::get('Roompdf',[RoomController::class,'genarateRoomPdf']);
+//------------------- ----------------Customer Booking Routes--------------------------------------------------------
+
+Route::get('roomindex',[indexController::class,'viewlist']);
+Route::view('create','addnew');
+Route::post('create',[createfunc::class,'getData']);
+
+Route::view("edit",'editbookings');
+Route::get('editlist/{id}',[indexController::class,'showData']);
+Route::post('editlist',[indexController::class,'update']);
+
+Route::get('deletelist/{id}',[indexController::class,'delete']);
+
+Route::get('bookPdf',[indexController::class,'exportBookPDF']);
