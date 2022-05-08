@@ -10,16 +10,16 @@
 <body>
 
     <div class="background">
-    <div class="version-tag">Version 1.2.0</div>
+        <div class="version-tag">Version 1.2.0</div>
         <div class="viewindashboardback">
-        <div class="titlelogoview"></div>       
-        <div class="titleview">View Inventory</div>
+            <div class="titlelogoview"></div>
+            <div class="titleview">View Inventory</div>
 
-        @if(session()->has('message'))
-    <div class="susceessmg">
-        {{ session()->get('message') }}
-    </div>
-@endif
+            @if(session()->has('message'))
+            <div class="susceessmg">
+                {{ session()->get('message') }}
+            </div>
+            @endif
 
 
             <div class="search">
@@ -54,7 +54,9 @@
                         <td>{{$inventorys['Quantity']}}</td>
                         <td>{{$inventorys['Description']}}</td>
                         <!-- <td><a href={{"DeleteInventoryData/".$inventorys['id']}}>Delete</a></td> -->
-                        <td><a  href={{"update_inventory/".$inventorys['id']}}><div class="updte"></div></a></td>
+                        <td><a href={{"update_inventory/".$inventorys['id']}}>
+                                <div class="updte"></div>
+                            </a></td>
 
                     </tr>
 
@@ -101,7 +103,7 @@
         </div>
 
     </div>
-    
+
 
 </body>
 

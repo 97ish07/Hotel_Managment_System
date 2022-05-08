@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -12,11 +11,13 @@
 <body>
 
     <div class="background">
-    <div class="version-tag">Version 1.2.0</div>
+        <div class="version-tag">Version 1.2.0</div>
         <div class="viewindashboardback">
-        <div class="titlelogoview"></div>       
-        <div class="titleview">Search result</div>
-       <a href="/" ><div class="backbtn"></div></a>
+            <div class="titlelogoview"></div>
+            <div class="titleview">Search result</div>
+            <a href="inventory_page">
+                <div class="backbtn"></div>
+            </a>
             <!-- <div class="search">
                 <form class="search_inventory" type="get" action="{{ url('/eventSearch') }}">
                     <input type="search" name="query" placeholder="Search.." class="searchbox">
@@ -25,38 +26,42 @@
             </form> -->
             </center>
             <div class="viewintable">
-            <table id="viewtable">
-    <tr class="tablehead">
-        <td>Id</td>
-        <td>Item Type</td>
-        <td>Item Name</td>
-        <td>Supplire Name</td>
-        <td>Unit Price</td>
-        <td>Quantity</td>
-        <td>Description</td>
-        <td>Delete</td>
-        <td>Update</td>
+                <table id="viewtable">
+                    <tr class="tablehead">
+                        <td>Id</td>
+                        <td>Item Type</td>
+                        <td>Item Name</td>
+                        <td>Supplire Name</td>
+                        <td>Unit Price</td>
+                        <td>Quantity</td>
+                        <td>Description</td>
+                        <td>Delete</td>
+                        <td>Update</td>
 
-    </tr>
-    @foreach($inventory_key as $inventorys)
+                    </tr>
+                    @foreach($inventory_key as $inventorys)
 
-    <tr class="tablehead2">
-        <td>{{$inventorys['id']}}</td>
-        <td>{{$inventorys['Item_Type']}}</td>
-        <td>{{$inventorys['Item_Name']}}</td>
-        <td>{{$inventorys['Supplire_Name']}}</td>
-        <td>{{$inventorys['Unit_Price']}}</td>
-        <td>{{$inventorys['Quantity']}}</td>
-        <td>{{$inventorys['Description']}}</td>
-        <td><a href={{"DeleteInventoryData/".$inventorys['id']}}><div class="delete"></div></a></td>
-        <td><a href={{"update_inventory/".$inventorys['id']}}><div class="updte"></div></a></td>
+                    <tr class="tablehead2">
+                        <td>{{$inventorys['id']}}</td>
+                        <td>{{$inventorys['Item_Type']}}</td>
+                        <td>{{$inventorys['Item_Name']}}</td>
+                        <td>{{$inventorys['Supplire_Name']}}</td>
+                        <td>{{$inventorys['Unit_Price']}}</td>
+                        <td>{{$inventorys['Quantity']}}</td>
+                        <td>{{$inventorys['Description']}}</td>
+                        <td><a href={{"DeleteInventoryData/".$inventorys['id']}}>
+                                <div class="delete"></div>
+                            </a></td>
+                        <td><a href={{"update_inventory/".$inventorys['id']}}>
+                                <div class="updte"></div>
+                            </a></td>
 
-    </tr>
+                    </tr>
 
-    @endforeach
+                    @endforeach
 
 
-</table>
+                </table>
             </div>
         </div>
 
@@ -96,7 +101,7 @@
         </div>
 
     </div>
-    
+
 
 </body>
 
