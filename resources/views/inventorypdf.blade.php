@@ -10,12 +10,23 @@
 <body>
 
 
-<div class="title">Hotle Diyatha</div>
-<img src="images\logo.jpg" alt="Italian Trulli" height="100" width="100"   style="position: absolute;  left:0px; border-style:groove; border-radius:6px;">
+<div class="title">Hotel Diyatha</div>
+<img src="images\logo.jpg" alt="Italian Trulli" height="100" width="100"   style="position: absolute;  right:0px; border-style:groove; border-radius:6px;">
 <div class="pr1">Inventory item details.</div>
-<p class="date1">Date : 2022.06.07</p>
-<p class="time1">Time : 13.45.07 pm</p>
-<p id="demo" class="dttt"></p>
+
+
+<div class="title3"> 
+        </div>
+
+<p class="date1"><?php
+echo "Date  :". date("y-m-d");
+?></p></p>
+
+
+<p class="time1"><?php
+echo "Time :". date("h:i:sa");
+?></p>
+<!-- <p id="demo" class="dttt"></p> -->
 
 
 
@@ -54,7 +65,7 @@
                
                 <style>
 
-.dttt {
+/* .dttt {
   padding: 0;
   font-size: 24pt;
 }
@@ -62,39 +73,39 @@
   $this:before {
     content: '© eval("new Date().getFullYear()")\ '
   }
-}
+} */
 
 .title{
     font-size: 40px;
     color:black;
     position: absolute;
-    top: 130px;
+    top: 0px;
     
 }
 .pr1{
     font-size: 20px;
     color:black;
     position: absolute;
-    top: 265px;
+    top: 165px;
     
 }
 .date1{
     font-size: 15px;
     color:black;
     position: absolute;
-    top: 195px;
+    top: 100px;
     
 }
 .time1{
     font-size: 15px;
     color:black;
     position: absolute;
-    top: 215px;
+    top: 120px;
     
 }
 table {
     position: absolute;
-    top: 300px;
+    top: 220px;
   border-collapse: collapse;
   border: 1px solid black;
   width: 100%;
@@ -121,14 +132,14 @@ td {
 </style>
 
 
-<script>
+<!-- <script>
 const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 const d = new Date();
 let month = months[d.getMonth()];
 document.getElementById("demo").innerHTML = month;
 
-</script>
+</script> -->
 
 </body>
 
