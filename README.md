@@ -10,7 +10,9 @@ There, we are mainly focusing on the most common problems that can be seen in a 
 system, such as
 
 • Physical space consuming
+
 • Much time consuming
+
 • Difficulty to find records
 • Difficult to analyzed records
 • Require lot of labor effort 
