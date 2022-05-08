@@ -19,7 +19,9 @@
                      <span id="success_message" class="text-success"></span>
         <div class="background" >
         <div class="version-tag">Version 1.2.0</div>
+       
             <div class="invdashboardback"></div>
+           
                 <div class="formbackground">
                   <div class="title">Add Inventory</div>
                   <div class="addlogo"></div>
@@ -124,11 +126,11 @@
       
 
 
-        <script>
+        <!-- <script>
 function myFunction() {
-  // Get the value of the input field with id="numb"
+
   let x = document.getElementById("numb").value;
-  // If x is Not a Number or less than one or greater than 10
+  
   let text;
   if (isNaN(x) || x < 1 || x > 10) {
     text = "Input not valid";
@@ -137,7 +139,7 @@ function myFunction() {
   }
   document.getElementById("demo").innerHTML = text;
 }
-</script>
+</script> -->
         
     </body>
 

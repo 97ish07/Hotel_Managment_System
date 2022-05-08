@@ -16,6 +16,7 @@
         <div class="viewindashboardback">
         <div class="titlelogoview"></div>       
         <div class="titleview">Search result</div>
+       <a href="/" ><div class="backbtn"></div></a>
             <!-- <div class="search">
                 <form class="search_inventory" type="get" action="{{ url('/eventSearch') }}">
                     <input type="search" name="query" placeholder="Search.." class="searchbox">

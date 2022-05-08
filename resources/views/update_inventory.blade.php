@@ -18,9 +18,11 @@
                      <span id="success_message" class="text-success"></span>
         <div class="background" >
         <div class="version-tag">Version 1.2.0</div>
+        
             <div class="invdashboardback"></div>
                 <div class="formbackground">
                   <div class="title">Update Inventory</div>
+                  <a href="/view_inventory" ><div class="backbtn"></div></a>
                   <div class="addlogo"></div>
 
                 
