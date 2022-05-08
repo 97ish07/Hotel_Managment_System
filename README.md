@@ -1,4 +1,4 @@
-About the project
+#About the project
 Shereen Chalet hotel is a newly established holiday resort in Kalpitiya with limited facilities yet. This hotel specializes in providing facilities like room reservations and managing events for its clients.
 
 Currently, this hotel consists of only a few employees. It had been exhausting for our client to manage rooms, bookings, inventories, events, menus, employees, maintenance activities, and finances all this time even with limited several employees and services.
