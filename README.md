@@ -14,9 +14,13 @@ system, such as
 • Much time consuming
 
 • Difficulty to find records
+
 • Difficult to analyzed records
+
 • Require lot of labor effort 
+
 • Lack of security 
+
 • Lack of permanence of records 
 
 The hotel management system that we implemented will provide solutions to all the 
@@ -37,9 +41,15 @@ are: room manager, inventory manager, room booking manager, and restaurant manag
 functions of the system are:
 
 • Manage all room types and room services
+
 • Manage the hotel's inventory.
+
 • Manage food orders and menu information.
+
 • Manage Room Reservation
 
 This system will be user-appropriate, easy to use, and provide easy recovery and end-user high 
 satisfaction.
+
+# Tools and Technologies used
+
