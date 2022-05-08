@@ -10,8 +10,9 @@
 <body>
 
 
-<div class="title">Hotle Diyatha</div>
-<img src="images\logo.jpg" alt="Italian Trulli" height="100" width="100"   style="position: absolute;  left:0px; box-shadow: 10px 5px 5px black;">
+<div class="title">Hotel Diyatha</div>
+<div class="title2">Room List Report</div>
+<img src="images\logo.jpg" alt="Italian Trulli" height="100" width="100"   style="position: absolute;  left:600px; box-shadow: 10px 5px 5px black;">
 
 
 
@@ -24,18 +25,20 @@
                         <td>Room Status</td>
                         <td>Room Price</td>
                         <td>Floor Number</td>
+                        <td> Description</td>
                        
 
                     </tr>
                     @foreach($data as $rooms)
 
                     <tr >
-                        <!-- <td>{{$inventorys['id']}}</td> -->
+                        
                         <td>{{$rooms['RoomID']}}</td>
                         <td>{{$rooms['RoomType']}}</td>
                         <td>{{$rooms['RoomStatus']}}</td>
                         <td>{{$rooms['Price']}}</td>
                         <td>{{$rooms['FloorNumber']}}</td>
+                        <td>{{$rooms['Description']}}</td>
                         
 
                     </tr>
@@ -50,12 +53,12 @@
     font-size: 40px;
     color:black;
     position: absolute;
-    top: 130px;
+    top: 10px;
     
 }
 table {
     position: absolute;
-    top: 250px;
+    top: 175px;
   border-collapse: collapse;
   border: 1px solid black;
   width: 100%;
@@ -74,6 +77,13 @@ td {
     top: 120px;
     color: black;
     font-size: larger;
+}
+
+.title2{
+    font-size: 20px;
+    color:black;
+    position: absolute;
+    top: 60px;
 }
 </style>
 
