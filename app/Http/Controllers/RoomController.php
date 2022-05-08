@@ -115,7 +115,7 @@ class RoomController extends Controller
     
 
     $rmpdf = PDF::loadview('Roompdf',compact('data'));
-    return $rmpdf->download('InventoryList.pdf');
+    return $rmpdf->download('RoomList.pdf');
 
  }
 
