@@ -155,6 +155,7 @@
     background-color: rgb(230, 135, 27);
     font-size: large;
     border-color:rgb(238, 145, 24);
+    cursor: pointer;
 }
 .submitbtn:hover{
     background-color: rgba(216, 72, 6, 0.747);

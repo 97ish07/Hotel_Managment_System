@@ -92,7 +92,7 @@
      
       height: 35px;
       width: 360px;
-      border-color: rgb(74, 187, 190);
+      border-color: rgb(62, 206, 241);
       border-radius: 8px;
       border-style: groove;
       color: #752c2c;
@@ -116,7 +116,7 @@
       background-size: 25px 25px;
       background-repeat: no-repeat;
       filter:drop-shadow(89);
-     
+      cursor: pointer;
       
       
     }

@@ -15,7 +15,7 @@
     <body >
     
         <div class="background" >
-        <div class="version-tag">Version 1.1.0</div>
+        <div class="version-tag">Version 1.2.0</div>
             <div class="invdashboardback"></div>
 
             <div class="titlelogo"></div>       

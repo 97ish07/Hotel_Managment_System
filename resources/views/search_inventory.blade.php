@@ -1,16 +1,4 @@
 
-<link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/searchinventory.css" />
-    <!-- <link rel="stylesheet" href="/css/popup.css" /> -->
-
-
-
-<!-- <div class="viewintable"> -->
-
-<!-- </div> -->
-<!-- //------------------------------------------------------------------------------------------------------- -->
-
-
 <!DOCTYPE html>
 <html>
 
@@ -18,12 +6,13 @@
 <head>
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/viewinventory.css" />
+    <link rel="stylesheet" href="/css/searchinventory.css" />
 </head>
 
 <body>
 
     <div class="background">
-    <div class="version-tag">Version 1.1.0</div>
+    <div class="version-tag">Version 1.2.0</div>
         <div class="viewindashboardback">
         <div class="titlelogoview"></div>       
         <div class="titleview">Search result</div>
@@ -36,7 +25,7 @@
             </center>
             <div class="viewintable">
             <table id="viewtable">
-    <tr lass="tablehead">
+    <tr class="tablehead">
         <td>Id</td>
         <td>Item Type</td>
         <td>Item Name</td>
@@ -50,7 +39,7 @@
     </tr>
     @foreach($inventory_key as $inventorys)
 
-    <tr lass="tablehead2">
+    <tr class="tablehead2">
         <td>{{$inventorys['id']}}</td>
         <td>{{$inventorys['Item_Type']}}</td>
         <td>{{$inventorys['Item_Name']}}</td>

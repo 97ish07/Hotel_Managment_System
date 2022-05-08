@@ -11,7 +11,7 @@
 <body>
 
     <div class="background">
-    <div class="version-tag">Version 1.1.0</div>
+    <div class="version-tag">Version 1.2.0</div>
         <div class="viewindashboardback">
         <div class="titlelogoview"></div>       
         <div class="titleview">Delete Inventory</div>

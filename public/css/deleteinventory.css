@@ -116,7 +116,7 @@
       background-size: 25px 25px;
       background-repeat: no-repeat;
       filter:drop-shadow(89);
-     
+      cursor: pointer;
       
       
     }
@@ -146,7 +146,7 @@
       background-repeat: no-repeat;
       margin: 0px 0px 0px 25px;
       /* text-align: center; */
-     
+      cursor: pointer;
       
 
     }
