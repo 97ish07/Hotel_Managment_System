@@ -47,26 +47,11 @@ Route::get('/eventSearch',[InventoryController::class,'eventSearch']);
 
 //Route::any('/search',[InventoryController::class,'Search']);
 
-//Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-//Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 //navigate to dashboad clicking home button or logo
 Route::view('dashboard','dashboard');
 
 //rout navgationbar(navigate to inventorya page)
 Route::view('inventory_page','inventory_page');
-//Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-//Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //Route::view('test','test');
 Route::view('test','test');
