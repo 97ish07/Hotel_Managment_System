@@ -61,7 +61,7 @@
                 <style>
 .title{
     font-size: 40px;
-    color:black;
+    color:#3E505C;
     position: absolute;
     top: 10px;
     
@@ -93,7 +93,7 @@ td {
     font-size: 20px;
     color:black;
     position: absolute;
-    top: 60px;
+    top: 100px;
 }
 
 
@@ -101,7 +101,7 @@ td {
     font-size: 20px;
     color:black;
     position: absolute;
-    top: 80px;
+    top: 70px;
 }
 </style>
 
