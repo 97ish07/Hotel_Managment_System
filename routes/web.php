@@ -88,6 +88,9 @@ Route::get('DeleteRoomData/{id}',[RoomController::class,'DeleteRoomData']);
 Route::get('Delete_Room',[RoomController::class,'ShowRoomDataTest']);
 
 
+//Route for generate report
+Route::view('Roompdf','Roompdf');
+Route::get('Roompdf',[RoomController::class,'genarateRoomPdf']);
 //------------------- ----------------Customer Booking Routes--------------------------------------------------------
 
 Route::get('roomindex',[indexController::class,'viewlist']);
