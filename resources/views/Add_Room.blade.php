@@ -15,7 +15,7 @@
                      <span id="success_message" class="text-success"></span>
         <div class="background" >
         <div class="version-tag">Version 1.1.0</div>
-            <div class="invdashboardback"></div>
+            <div class="invdashboardback2"></div>
                 <div class="formbackground">
                   <div class="title">Add Room</div>
                   <div class="addlogo"></div>
