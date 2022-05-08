@@ -55,7 +55,7 @@ satisfaction.
 
 # Acknowledgment
 
-             ![SLIIT_Logo_Crest](https://user-images.githubusercontent.com/81189012/167287872-9a7958fc-5056-4efb-98e5-c5b8dea98b96.png)
               
 
 
+![logo](https://user-images.githubusercontent.com/81189012/167287929-9e2ce326-1193-4f11-868d-0716c68e6e0b.png)
