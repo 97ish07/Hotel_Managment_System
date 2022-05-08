@@ -1,8 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\indexController;
+
+use App\Http\Controllers\InventoryController;
+use Dompdf\Dompdf;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,11 +19,32 @@ use App\Http\Controllers\indexController;
 |
 */
 
+
 //------------------------------------Common Routs-------------------------------------------------------------------------
 
+Route::get('/', function () {
+    return view('inventory_page');
+});
+//show inventory data
+Route::view('view_inventory','view_inventory');
+Route::get('view_inventory',[InventoryController::class,'ShowInventoryData']);
 
 
 
+
+//Delete inventory route
+Route::view('delete_inventory','delete_inventory');
+Route::get('DeleteInventoryData/{id}',[InventoryController::class,'DeleteInventoryData']);
+
+//update inventory route
+Route::view('update_inventory','update_inventory');
+Route::get('update_inventory/{id}',[InventoryController::class,'ShowUpdateInventoryData']);
+Route::post('update_inventory',[InventoryController::class,'UpdateInventoryData']);
+
+//search
+Route::get('/eventSearch',[InventoryController::class,'eventSearch']);
+
+//Route::any('/search',[InventoryController::class,'Search']);
 
 
 //Auth::routes();
@@ -39,6 +65,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 
 
 
@@ -104,3 +131,10 @@ Route::post('editlist',[indexController::class,'update']);
 Route::get('deletelist/{id}',[indexController::class,'delete']);
 
 Route::get('bookPdf',[indexController::class,'exportBookPDF']);
+
+//pdf genrate
+
+Route::view('inventorypdf','inventorypdf');
+Route::get('inventorypdf',[InventoryController::class,'genaratePdf']);
+
+

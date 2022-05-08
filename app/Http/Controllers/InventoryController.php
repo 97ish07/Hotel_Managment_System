@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\inventory;
 use Illuminate\Support\Facades\DB;
+// use PDF;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 
 class InventoryController extends Controller
@@ -23,8 +25,8 @@ class InventoryController extends Controller
             'ItemType'=>'required',
             'ItemName'=>'required',
             'SupplireName'=>'required',
-            'UnitPrice'=>'required',
-            'Quantity'=>'required',
+            'UnitPrice'=>'required|numeric',
+            'Quantity'=>'required|numeric',
             'Description'=>'required'
         ]);
 
@@ -40,7 +42,9 @@ class InventoryController extends Controller
         $addinventory->Quantity=$req->Quantity;
         $addinventory->Description=$req->Description;
         $addinventory->save();
-        return redirect('add_inventory');
+        // return redirect('add_inventory');
+        return redirect()->back()->with('message', 'Inventory details added successfully ');
+        
     }
 
     function DeleteInventoryData($id)
@@ -48,7 +52,8 @@ class InventoryController extends Controller
 
         $data=inventory::find($id);
         $data->delete();
-        return redirect('view_inventory');
+        // return redirect('test');
+        return redirect()->back()->with('message', 'Inventory details delete successfully ');
     }
 
     function ShowUpdateInventoryData($id)
@@ -59,6 +64,17 @@ class InventoryController extends Controller
 
     function UpdateInventoryData(Request $req)
     {
+
+        $req->validate([
+            //'ItemId'=>'required',
+            'ItemType'=>'required',
+            'ItemName'=>'required',
+            'SupplireName'=>'required',
+            'UnitPrice'=>'required|numeric',
+            'Quantity'=>'required|numeric',
+            'Description'=>'required'
+        ]);
+
          $data=inventory::find($req->id);
          $data->Item_Type=$req->ItemType;
          $data->Item_Name=$req->ItemName;
@@ -67,7 +83,8 @@ class InventoryController extends Controller
          $data->Quantity=$req->Quantity;
          $data->Description=$req->Description;
          $data->save();
-         return redirect('view_inventory');
+        //  return redirect('view_inventory');
+         return redirect('view_inventory')->with('message', 'Inventory details update successfully ');
     }
 
    // public function DbOperation()
@@ -94,10 +111,23 @@ function ShowInventoryDataTest(){
 
     $data =inventory::all();
     return view('test',['inventory_keys'=>$data]);
-    //return inventory::all();
+    return inventory::all();
 }
 
 
+//genarate pdf 
+ function genaratePdf()
+ {
+
+    $data =inventory::all();
+    //--------------------------------
+    
+    // $pdf = PDF::loadView('inventorypdf', $data);
+
+    $invpdf = PDF::loadview('inventorypdf',compact('data'));
+    return $invpdf->download('InventoryList.pdf');
+
+ }
 
 
 }

@@ -15,15 +15,19 @@
     <body >
     
         <div class="background" >
-                 
+        <div class="version-tag">Version 1.2.0</div>
             <div class="invdashboardback"></div>
 
-             <div class="title">Inventory Management</div>
+
+            <div class="titlelogo"></div>       
+        <div class="title">Inventory Management</div>
+            
+
 
                  <a href="add_inventory" class="addinventorybtn"> Add Inventory</a>
                  <a href="view_inventory" class="viewinventorybtn" > View Inventory  </a> 
-                 <a href="add_inventory" class="DeleteInventorybtn">Delete Inventory</a>
-                 <a href="view_inventory" class="Reportbtn" > Genarate Report  </a> 
+                 <a href="test" class="DeleteInventorybtn">Delete Inventory</a>
+                 <a href="inventorypdf" class="Reportbtn" > Genarate Report  </a> 
                     
                     <div class="navigationbar">
                   

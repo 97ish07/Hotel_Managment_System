@@ -1,7 +1,4 @@
 
-
-
-
 <!DOCTYPE html>
 <html>
 
@@ -18,38 +15,97 @@
     <span id="error_message" class="text-danger"></span>  
                      <span id="success_message" class="text-success"></span>
         <div class="background" >
-        <div class="version-tag">Version 1.1.0</div>
+        <div class="version-tag">Version 1.2.0</div>
+       
             <div class="invdashboardback"></div>
+           
                 <div class="formbackground">
                   <div class="title">Add Inventory</div>
                   <div class="addlogo"></div>
+
+                  
+                  @if(session()->has('message'))
+    <div class="susceessmg">
+        {{ session()->get('message') }}
+    </div>
+@endif
                     <form action="add_inventory" method="POST" id="submit_form" >
                             @csrf 
-                            <label class="l1" ><span>*</span> Item type</label>
+                            <label class="l1" ><span>*</span> Item Type</label>
                              <select class="select" name="ItemType" placeholder="Enter Item type">
                                <option selected>Select Item Type</option>
                                 <option value="Food">Food</option>
-                                <option value="Electric">Electric</option>
-                                <option value="inventory">inventory</option>
+                                <option value="Electric">Electrical</option>
+                                <option value="Furniture">Furniture</option>
+                                <option value="Stationary">Stationary</option>
+                                <option value="Other">Other</option>
                              </select>
                              <span>@error('ItemType'){{$message}}@enderror</span>
                      <label class="l2" ><span>*</span> Item Name</label>
                      <div class="ItemName"><input type="text" name="ItemName" placeholder="Enter Item Name" class="texbox"></div></br><div class="error2"><span>@error('ItemName'){{$message}}@enderror</span></div></br></br>
-                     <label class="l3" ><span>*</span> SupplireName</label>  
-                     <div class="SupplireName"><input type="text" name="SupplireName" placeholder="Enter Supplire Name" class="texbox"></div></br><div class="error3"><span>@error('SupplireName'){{$message}}@enderror</span></div></br></br>
+                     <label class="l3" ><span>*</span> Supplire Name</label>  
+                     <div class="SupplireName"><input  type="text" name="SupplireName" placeholder="Enter Supplire Name" class="texbox"></div></br><div class="error3" ><span>@error('SupplireName'){{$message}}@enderror</span></div></br></br>
                      <label class="l4" ><span>*</span> Unit Price</label>     
-                     <div class="UnitPrice"><input type="text" name="UnitPrice" placeholder="Enter Unit Price(Rs)" class="texbox"></div></br><div class="error4"><span>@error('UnitPrice'){{$message}}@enderror</span></div></br></br>
+                     <div class="UnitPrice"><input id="numb" type="text" name="UnitPrice" placeholder="Enter Unit Price(Rs)" class="texbox"></div></br><div class="error4"><span>@error('UnitPrice'){{$message}}@enderror</span></div></br></br>
+                     <p id="demo"></p>
                      <label class="l5" ><span>*</span> Quantity</label>           
                      <div class="Quantity"><input type="text" name="Quantity" placeholder="Enter Quantity" class="texbox"></div></br><div class="error5"><span>@error('Quantity'){{$message}}@enderror</span></div></br></br>
                      <label class="l6" ><span>*</span> Description</label>                
                      <div class="Description"><input type="text" name="Description" placeholder="Description" class="texbox"></div></br><div class="error6"><span>@error('Description'){{$message}}@enderror</span></div></br></br>
-                      <button  type="submit" class="submitbtn">submit</button><div id="app">
+                      <button onsubmit="myFunction()" type="submit" class="submitbtn"> Submit</button><div id="app">
         
     </div>
                       
                       
-                      <button type="#" class="clearbtn">Clear</button>
+                      <button type="reset" value="Reset" class="clearbtn">Clear</button>
 </form>
+
+
+
+<!-- <form action="add_inventory" method="POST" id="submit_form" >
+                           
+                            <label class="l1" ><span>*</span> Item Type</label>
+                             <select class="select" name="ItemType" placeholder="Enter Item type">
+                               <option selected>Select Item Type</option>
+                                <option value="Food">Food</option>
+                                <option value="Electric">Electrical</option>
+                                <option value="Furniture">Furniture</option>
+                                <option value="Stationary">Stationary</option>
+                                <option value="Other">Other</option>
+                             </select>
+                             <span><p id="demo"></p></span>
+
+                     <label class="l2" ><span>*</span> Item Name</label>
+                     <div class="ItemName"><input id="numb" type="text" name="ItemName" placeholder="Enter Item Name" class="texbox"></div></br><div class="error2"><span><p id="demo"></p></span></div></br></br>
+
+
+                     <label class="l3" ><span>*</span> Supplire Name</label>  
+                     <div class="SupplireName"><input  id="numb" type="text" name="SupplireName" placeholder="Enter Supplire Name" class="texbox"></div></br><div class="error3" ><span><p id="demo"></p></span></div></br></br>
+
+
+                     <label class="l4" ><span>*</span> Unit Price</label>     
+                     <div class="UnitPrice"><input id="numb" type="text" name="UnitPrice" placeholder="Enter Unit Price(Rs)" class="texbox"></div></br><div class="error4"><span><p id="demo"></p></span></div></br></br>
+                     <p id="demo"></p>
+
+
+                     <label class="l5" ><span>*</span> Quantity</label>           
+                     <div class="Quantity"><input id="numb" type="text" name="Quantity" placeholder="Enter Quantity" class="texbox"></div></br><div class="error5"><span><p id="demo"></p></span></div></br></br>
+
+
+                     <label class="l6" ><span>*</span> Description</label>                
+                     <div class="Description"><input  id="numb" type="text" name="Description" placeholder="Description" class="texbox"></div></br><div class="error6"><span><p id="demo"></p></span></div></br></br>
+
+
+                      <button onclick="myFunction()" type="Button" class="submitbtn"> Submit</button><div id="app">
+        
+    </div>
+                      
+                      
+                      <button type="reset" value="Reset" class="clearbtn">Clear</button>
+</form> -->
+
+
+
 
                 </div>
                 <div class="navigationbar">
@@ -64,7 +120,23 @@
 
                 </div>
         </div>
- 
+      
+
+
+        <!-- <script>
+function myFunction() {
+
+  let x = document.getElementById("numb").value;
+  
+  let text;
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script> -->
         
     </body>
 

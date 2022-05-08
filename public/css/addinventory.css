@@ -1,13 +1,15 @@
 .invdashboardback {
     background-position: center;
-    height: 675px; /* Screen height */
-    width: 1300px; /* Screen width */
+
+    height: 87vh; /* Screen height */
+    width: 85vw; /* Screen width */
     background-size: 85vw 87vh;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    top: 50px;
-    left: 114px;
-    
+    top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  
     border-radius: 20px;
     opacity: .5;
     border-color: rgb(171, 173, 173);
@@ -155,6 +157,7 @@
     background-color: rgb(3, 168, 245);
     font-size: large;
     border-color:rgb(0, 217, 255);
+    cursor: pointer;
 }
 .submitbtn:hover{
     background-color: rgb(0, 130, 190);
@@ -173,6 +176,7 @@
     background-color: rgb(255, 62, 62);
     font-size: large;
     border-color: rgb(255, 0, 0);
+    cursor: pointer;
 }
 .clearbtn:hover{
     background-color: rgb(255, 19, 19);
