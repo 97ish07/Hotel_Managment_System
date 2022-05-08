@@ -1,65 +1,86 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+About the project
+Shereen Chalet hotel is a newly established holiday resort in Kalpitiya with limited facilities yet. This hotel specializes in providing facilities like room reservations and managing events for its clients.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Currently, this hotel consists of only a few employees. It had been exhausting for our client to manage rooms, bookings, inventories, events, menus, employees, maintenance activities, and finances all this time even with limited several employees and services.
 
-## About Laravel
+Up until now, our client has managed the hotel manually with ledgers and physical documentations due to the hotel’s scale and now they wish to renovate and upgrade the premises.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Therefore, they have realized that functionalities in the hotel will be much more productive and efficient if they upgrade their manual system to a web-based system
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Tools and Technologies used
+Front end framework - Bootstrap
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+Back end framework - Laravel version 8
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+DBMS - phpmyadmin
+Database - mySQL
+To run the application
+Prerequisities
+Following servers and packages should be installed prior to the the application installation
+xammp server with php version 8
+latest version of composer
+mySQL server
+Installation
+Following commands can be followed to run the application successfully
+Create a new folder, go inside the folder and open git bash from it
+Clone the project
+git clone https://github.com/TharinduAB/Hotel-Management-System-for-the-Shereen-Chalet.git
+Go inside the cloned project folder using CD command
+Install composer packages
+composer install
+Open the cloned project from VS code IDE
+Change the database name in the .env.example with the relevant DB name and Rename the .env.example file as .env
+Create a new Database inside MySQL DBMS with the DB name given in the .env file
+Generate keys
+php artisan key:generate
+Do the table migrations
+php artisan migrate
+Run the server
+php artisan serve
+Run the application by using the suggested URL in a prefered web browser
+Contributing
+cmd to create a new feature branch in the repo
+git checkout -b newFeatureBranchName
+git push origin newFeatureBranchName (now check whether it's created in github)
 
-## Laravel Sponsors
+cmd to checkout to a branch which is already created
+git checkout featureBranchName
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+When working in your branch,
+if multiple files created, add them all at once:
+git add .
 
-### Premium Partners
+After doing any modification to the code in your branch,
+commit it:
+git commit -m "commitName"
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+push it to the featureBranch in github
+git push origin featureBranchName
 
-## Contributing
+When your featureBranch is ready to merged with the Master branch,
+pull the latest updates in github master to local master
+git checkout master
+git pull
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Now your featureBranch can be merged to local master
+git merge featureBranchName
 
-## Code of Conduct
+If everything works(run) perfect, push the updates in local master to github master:
+git push
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Acknowledgment
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+This is a group project done for ITP module in second year, SLIIT
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# Hotel_Managment_System
+Contributors
+IT19977980– Abeynayake T.C-TharinduAB
+IT19987026– Abeysinha A.M.V.A-vihangaAshvinda
+IT19985350– Rathnahewage T.V-Thusil99
+IT19974910– Hapugala H.A.V.V-VenuraHapugala
+IT19975764– Bandara M.B.D.N-dilendranishadhi
+IT19987644– Ranodya M.J.C-CharmieRanodya
+IT19986036– Amarakoon A.V.G.H.S-HeliSahanya
+IT19961422– Uyanahewa M.I.R-MadhaviImashi
