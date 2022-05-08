@@ -11,10 +11,11 @@
 
 
 <div class="title">Hotle Diyatha</div>
-<img src="images\logo.jpg" alt="Italian Trulli" height="100" width="100"   style="position: absolute;  left:0px; box-shadow: 10px 5px 5px black;">
-
-<!-- <p>Using new Date(), creates a new date object with the current date and time:</p>
-<p id="demo">qqq</p> -->
+<img src="images\logo.jpg" alt="Italian Trulli" height="100" width="100"   style="position: absolute;  left:0px; border-style:groove; border-radius:6px;">
+<div class="pr1">Inventory item details.</div>
+<p class="date1">Date : 2022.06.07</p>
+<p class="time1">Time : 13.45.07 pm</p>
+<p id="demo" class="dttt"></p>
 
 
 
@@ -53,6 +54,16 @@
                
                 <style>
 
+.dttt {
+  padding: 0;
+  font-size: 24pt;
+}
+@element 'footer' {
+  $this:before {
+    content: '© eval("new Date().getFullYear()")\ '
+  }
+}
+
 .title{
     font-size: 40px;
     color:black;
@@ -60,9 +71,30 @@
     top: 130px;
     
 }
+.pr1{
+    font-size: 20px;
+    color:black;
+    position: absolute;
+    top: 265px;
+    
+}
+.date1{
+    font-size: 15px;
+    color:black;
+    position: absolute;
+    top: 195px;
+    
+}
+.time1{
+    font-size: 15px;
+    color:black;
+    position: absolute;
+    top: 215px;
+    
+}
 table {
     position: absolute;
-    top: 250px;
+    top: 300px;
   border-collapse: collapse;
   border: 1px solid black;
   width: 100%;
@@ -89,13 +121,14 @@ td {
 </style>
 
 
-<!-- <script>
+<script>
 const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 const d = new Date();
 let month = months[d.getMonth()];
 document.getElementById("demo").innerHTML = month;
-</script> -->
+
+</script>
 
 </body>
 

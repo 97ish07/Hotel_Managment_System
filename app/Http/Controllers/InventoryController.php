@@ -120,6 +120,8 @@ function ShowInventoryDataTest(){
  {
 
     $data =inventory::all();
+    //--------------------------------
+    
     // $pdf = PDF::loadView('inventorypdf', $data);
 
     $invpdf = PDF::loadview('inventorypdf',compact('data'));
