@@ -29,8 +29,9 @@ Route::get('/', function () {
 Route::view('view_inventory','view_inventory');
 Route::get('view_inventory',[InventoryController::class,'ShowInventoryData']);
 
-
-
+//add inventory route
+Route::view('add_inventory','add_inventory');
+Route::post('add_inventory',[InventoryController::class,'AddInventoryData']);
 
 //Delete inventory route
 Route::view('delete_inventory','delete_inventory');
@@ -46,7 +47,6 @@ Route::get('/eventSearch',[InventoryController::class,'eventSearch']);
 
 //Route::any('/search',[InventoryController::class,'Search']);
 
-
 //Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -58,6 +58,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //navigate to dashboad clicking home button or logo
 Route::view('dashboard','dashboard');
 
+//rout navgationbar(navigate to inventorya page)
+Route::view('inventory_page','inventory_page');
 //Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -66,7 +68,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+//Route::view('test','test');
+Route::view('test','test');
+// Route::get('test',[InventoryController::class,'ShowInventoryDatas']);
+Route::get('test',[InventoryController::class,'ShowInventoryDataTest']);
 
+//pdf  report genarategenrate
+
+Route::view('inventorypdf','inventorypdf');
+Route::get('inventorypdf',[InventoryController::class,'genaratePdf']);
 
 
 
