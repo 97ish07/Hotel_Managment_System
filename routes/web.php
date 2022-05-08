@@ -4,8 +4,9 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\indexController;
-
+use App\Http\Controllers\createfunc;
 use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\DineInController;
 use Dompdf\Dompdf;
 
 /*
@@ -132,4 +133,17 @@ Route::get('bookPdf',[indexController::class,'exportBookPDF']);
 Route::view('inventorypdf','inventorypdf');
 Route::get('inventorypdf',[InventoryController::class,'genaratePdf']);
 
+
+
+
+//------------------- ----------------Dinein Routes--------------------------------------------------------
+
+Route::resource('dinein', 'App\Http\Controllers\DineInController');
+
+
+Route::get('/addDinein', function () {
+
+    return view('add_new_booking');
+
+});
 
