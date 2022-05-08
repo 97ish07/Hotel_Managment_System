@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/viewinventory.css" />
     
+    
 </head>
 
 
@@ -15,6 +16,15 @@
 <img src="images\logo.jpg" alt="Italian Trulli" height="100" width="100"   style="position: absolute;  left:600px; box-shadow: 10px 5px 5px black;">
 
 
+<div class="title3"> 
+        <?php
+            #to display the current date, time of the generated report
+            $current_date_time = \Carbon\Carbon::now()->toDateTimeString(); 
+            echo "<div style='font-size: 20px;'> Date/Time : ".$current_date_time."</div>";
+            $roomCount = 1;
+        ?>
+
+        </div>
 
 
 <table id="viewtable" class="table">
@@ -84,6 +94,14 @@ td {
     color:black;
     position: absolute;
     top: 60px;
+}
+
+
+.title3{
+    font-size: 20px;
+    color:black;
+    position: absolute;
+    top: 80px;
 }
 </style>
 
