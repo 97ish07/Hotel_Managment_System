@@ -61,7 +61,9 @@ satisfaction.
 ![logo](https://user-images.githubusercontent.com/81189012/167288139-52b06a16-7323-4064-b420-d68271a113ee.png)
 
 This is a group project done for ITPM module in 3rd year, SLIIT
+
 *Contributors
+
 • IT19984674 - K.M.I.S Wanninayake
 
 • IT19985350 - T.V. Rathnahewage
